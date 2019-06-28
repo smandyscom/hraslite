@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="pickNplaceShelf">
+    <Code><![CDATA[begin
+  //assumption : arm in cal_ref1
+  
+  //pick f1
+  //wait until user confirm (reload bottom
+  //place f1
+  //pick f2
+  //wait until user confirm (close the fixture
+  //place f2 (need blow simultanously
+  //pick f3
+  //place f3 
+  
+end]]></Code>
+  </Program>
+</Programs>

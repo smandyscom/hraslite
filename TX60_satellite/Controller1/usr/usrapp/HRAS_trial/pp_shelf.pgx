@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="pp_shelf">
+    <Code><![CDATA[begin
+  //pick and place procedure shelf-fixture
+  //assumed that start from cal_ref_1
+
+  //show message and get input (if reloaded all material
+  call key_check("Reload")
+
+
+  call regular_pick(t1,mNomSpeed,f1pick,dDio_t1_vg,dDio_t1_vs,false)
+  call regular_place(t1,mNomSpeed,f1place,dDio_t1_vg,false)
+
+  call regular_pick(t1,mNomSpeed,f2pick,dDio_t1_vg,dDio_t1_vs,false)
+  //show message and get input (if fixture applied
+  call key_check("Fixture close")
+
+  call f2_place(mNomSpeed,mSlowSpeed)
+
+  call regular_pick(t3,mNomSpeed,f3pick,dDio_t3_vs,dDio_t3_vs,false)
+  call regular_place(t3,mNomSpeed,f3place,dDio_t3_vg,true)
+
+end]]></Code>
+  </Program>
+</Programs>

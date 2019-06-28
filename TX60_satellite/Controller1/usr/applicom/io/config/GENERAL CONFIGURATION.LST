@@ -1,0 +1,19 @@
++---------------------------------------------------------------+
+| General configuration listing                                 |
++---------------------------------------------------------------+
+| COMPANY = Molex
+| DATE    = Friday, December 02, 2016 At 16:48
+| VERSION = 4.1 Build 9
+| CONFIGURATION NAME = D_TEST
+| BOARD LOCATION = LAN TCP/IP
++---------------------------------------------------------------+
+
+  NUMBER OF BOARDS = 1
+
+  <CONFIGURATION DOWNLOADED BY LAN TCP/IP>
+
+  <BOARD_1>
+    TYPE   = PCI/PCU-ETHIO
+
+    <CHANNEL_0>
+      PROFINET IO Device

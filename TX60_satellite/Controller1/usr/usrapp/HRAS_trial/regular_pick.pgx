@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2" >
+  <Program name="regular_pick" access="private" >
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1" >
+      <Parameter name="x_tTool" type="tool" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_mMdesc" type="mdesc" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_pPoint_pick" type="point" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_dDio_vg" type="dio" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_dDio_vs" type="dio" use="value" xsi:type="element" dimensions="1" />
+      <Parameter name="x_bBool_check" type="bool" use="value" xsi:type="element" dimensions="1" />
+    </Parameters>
+    <Locals>
+      <Local name="l_pPoint_pick" type="point" xsi:type="array" size="1" />
+      <Local name="l_pPoint_safe" type="point" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+
+  //vertical regular pick process
+
+  //control point preparation
+  l_pPoint_safe=x_pPoint_pick
+  l_pPoint_safe.trsf.z=l_pPoint_safe.trsf.z+nNum_safe_h
+
+  l_pPoint_pick=x_pPoint_pick
+
+  ////to place via safe
+  movej(l_pPoint_safe,x_tTool,x_mMdesc)
+  //waitEndMove()
+  movej(l_pPoint_pick,x_tTool,x_mMdesc)
+  waitEndMove()
+  //vg on
+  open(x_tTool)
+  //x_tTool.gripper = true
+  //delay(x_tTool.otime)
+
+  //dioSet(x_dDio_vg,1)
+
+  //to safe
+  movej(l_pPoint_safe,x_tTool,x_mMdesc)
+  waitEndMove()
+
+  //check if vacuum established
+  if x_bBool_check and (dioGet(x_dDio_vs)==1)
+    //success
+  elseIf x_bBool_check and (dioGet(x_dDio_vs)==1)
+    //failed
+  else
+    //irrelevant from IO check
+  endIf
+
+end]]></Code>
+  </Program>
+</Programs>

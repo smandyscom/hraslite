@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CellUserOptions>
+  <Controller Name="Controller1">
+    <Application>Disk://HRAS_trial/HRAS_trial.pjx</Application>
+  </Controller>
+  <Option Name="DataTreeView">
+    <Nodes>
+      <Node Path="TX60_satellite" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\dio" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\dio\dDio_t1_vb" IsExpanded="true" />
+    </Nodes>
+  </Option>
+  <Option Name="CellExplorer">
+    <Nodes>
+      <Node Path="TX60_satellite" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial" IsExpanded="true" />
+    </Nodes>
+  </Option>
+  <Option Name="GeometryView">
+    <Nodes>
+      <Node Path="TX60_satellite" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\flange[0]" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\flange[0]\ca" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\flange[0]\ca\ca[0]" IsExpanded="true" />
+    </Nodes>
+  </Option>
+  <Option Name="Breakpoints">
+    <Breakpoints>
+      <Breakpoint Controller="Controller1" Application="Disk://HRAS_trial/HRAS_trial.pjx" ProgramName="f2_place" Line="19" />
+    </Breakpoints>
+  </Option>
+  <Option Name="IOsControlPanel">
+    <Ios />
+  </Option>
+  <Option Name="Watches">
+    <Watches />
+  </Option>
+  <Option Name="3DView">
+    <_3DView Visible="false" />
+  </Option>
+  <Option Name="SynchronizerMode">
+    <Synchronizers>
+      <Synchronizer Controller="Controller1" Mode="Emulator" />
+    </Synchronizers>
+  </Option>
+  <Option Name="Safety">
+    <Safeties />
+  </Option>
+</CellUserOptions>

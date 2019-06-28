@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Description xmlns="">
+
+<FileInformations wFileFormatVersionHigh="1" 
+                  wFileFormatVersionLow="3" 
+                  wToolconfVersionHigh="1" 
+                  wToolconfVersionLow="0" 
+                  tTime="16:48:46"    
+                  dDate="02:12:2016"/>
+                  <!-- tTime=hh:mm:ss dDate=DD:MM:YYYY-->
+
+<MasterInfo       byVersion="16" 
+                  byRelease="0" 
+                  byProtocol="159" 
+                  byCyclicFlux="1" 
+                  szProtocolName="PROFINET IO-DEV"    
+                  byMaxTypeEquipment="1"
+                  wMinEquipmentNumber="0" 
+                  wMaxEquipmentNumber="128"/>
+
+<IOControllerInformations>
+    <IOController szIOControllerName="ethio-pnio-dev"
+                  wStateatStartup="117"
+                  wActivityTimeoutFactor="600"
+                  wRequestTimeout="10"
+                  wMaxRequest="6"
+                  wBaudRate="2"
+                  wConnectionLifeTime="3"
+                  byTabIPaddress="192.168.0.250"
+                  byTabIPMask="255.255.255.0"
+                  byTabIPGateway="0.0.0.0"/>
+
+    <DCP          wTimeOut="3"
+                  wRetry="3"
+                  wIdentificationTimeOut="3"/>
+
+    <RPCClient    dwMaxPing="3"
+                  dwMaxRequest="3"
+                  wTimeOutBroadCast="0"
+                  wTimeOutAck="0"
+                  wTimeOutCancel="1000"
+                  wTimeOutFrag="2000"
+                  wTimeoutPing="2000"
+                  wTimeOutWait="2000"/>
+
+    <RPCServer    wTimeOutIdle="0"
+                  wTimeOutResend="2000"
+                  dwMaxReply="3"/>
+
+    <RTA          wRTA_TimeOutFactor="3"
+                  wRTA_Retries="3"/>
+
+    <Advanced     wRetriesNumber="2"
+                  wIntervalRetries="2"
+                  wConnectionServicing="1"
+                  byIOXSEnable="0"/>
+
+</IOControllerInformations>
+<Device  byDeviceType="0">
+    <DeviceInfo   wAR_BlockVersion="0" 
+                  wIOCR_BlockVersion="0" 
+                  wAlarmCR_BlockVersion="0" 
+                  wPrmSrv_BlockVersion="0"
+                  wSubModuleDataBlockVersion="0" 
+                  wNumberOfAdditionalInputCR="0" 
+                  wNumberOfAdditionalOutputCR="0" 
+                  wNumberOfAdditionalMulticasProviderCR="0" 
+                  wNumberOfMulticastConsumerCR="0"
+                  wSoftSynchro="0"
+                  wRPCDataOrder="0"
+                  wDeviceDataOrder="1"
+                  wInitiatorActivityTimeout="0"
+                  byTabIPAddress="0.0.0.0"
+                  byTabIPMask="0.0.0.0"
+                  byTabIPGateway="0.0.0.0"
+                  dwPortRPC="34964"
+                  wNeq="0"/>
+
+    <AR           wArType="0" 
+                  szDeviceName="ethio-pnio-dev"
+                  wStationNameLength="14"
+                  wObjectUUID_LocalIndex="0"
+                  dwARproperties="0"
+                  wCMInitiatorActivityTimeoutFactor="0"
+                  wInitiatorUDPRTPort="0"
+                  wRemoteApplicationTimeOut="0"
+                  wAddressingMode="0"
+                  dwVendorID="0"
+                  dwDeviceID="0"/>
+
+    <Alarm        wAlarmCRType="0"
+                  wLT="0"
+                  wAlarmCRProperties="0"
+                  wRTATimeoutFactor="0"
+                  wRTARetries="0"
+                  wLocalAlarmReference="0"
+                  wMaxAlarmDataLength="0"
+                  wAlarmCRTagHeaderHigh="0"
+                  wAlarmCRTagHeaderLow="0"/>
+    <ExpectedModule  wNumberOfAPI="1">
+         <API     dwAPINumber="0"
+                  wSlotNumber="0"
+                  dwModuleIdentNumber="269484032"
+                  wModuleProperties="0"
+                  wNumberOfSubModules="1">
+                
+             <Submodule wSubSlotNumber="1"
+                  dwSubmoduleIdentNumber="269549568"
+                  wSubmoduleProperties="0"
+                  wPROFIsafeSupported="0">
+              
+                <DataDescription wDataDescription="1"
+                  wSubmoduleDataLength="0"
+                  byLengthIOCS="0"
+                  byLengthIOPS="0"/>
+             </Submodule>
+         </API>
+    </ExpectedModule>
+    <ExpectedModule  wNumberOfAPI="1">
+         <API     dwAPINumber="0"
+                  wSlotNumber="1"
+                  dwModuleIdentNumber="270532608"
+                  wModuleProperties="0"
+                  wNumberOfSubModules="1">
+                
+             <Submodule wSubSlotNumber="1"
+                  dwSubmoduleIdentNumber="270663682"
+                  wSubmoduleProperties="0"
+                  wPROFIsafeSupported="0">
+              
+                <DataDescription wDataDescription="1"
+                  wSubmoduleDataLength="2"
+                  byLengthIOCS="0"
+                  byLengthIOPS="0"/>
+             </Submodule>
+         </API>
+    </ExpectedModule>
+    <ExpectedModule  wNumberOfAPI="1">
+         <API     dwAPINumber="0"
+                  wSlotNumber="2"
+                  dwModuleIdentNumber="271581184"
+                  wModuleProperties="0"
+                  wNumberOfSubModules="1">
+                
+             <Submodule wSubSlotNumber="1"
+                  dwSubmoduleIdentNumber="271777794"
+                  wSubmoduleProperties="0"
+                  wPROFIsafeSupported="0">
+              
+                <DataDescription wDataDescription="2"
+                  wSubmoduleDataLength="2"
+                  byLengthIOCS="0"
+                  byLengthIOPS="0"/>
+             </Submodule>
+         </API>
+    </ExpectedModule>
+</Device>
+</Description>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="f2_place">
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1">
+      <Parameter name="x_mMdesc" type="mdesc" xsi:type="element" />
+      <Parameter name="x_mMdesc_slow" type="mdesc" xsi:type="element" />
+    </Parameters>
+    <Locals>
+      <Local name="l_pPoint_blow" type="point" xsi:type="array" size="1" />
+      <Local name="l_pPoint_drop" type="point" xsi:type="array" size="1" />
+      <Local name="l_pPoint_safe" type="point" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  //vertical drop filter-2 process
+
+  //control point preparation
+  l_pPoint_safe=f2place
+  l_pPoint_safe.trsf.z=l_pPoint_safe.trsf.z+nNum_safe_h
+
+  l_pPoint_blow=f2place
+  l_pPoint_blow.trsf.z=l_pPoint_blow.trsf.z+nNum_blow_h
+
+  l_pPoint_drop=f2place
+
+  ////to place via safe
+  movej(l_pPoint_safe,t1,x_mMdesc)
+  movej(l_pPoint_drop,t1,x_mMdesc)
+  waitEndMove()
+  //vg off
+  //vb on
+  //dioSet(dDio_t1_vg,0)
+  close(t1)
+  dDio_t1_vb=true
+  //on and delay
+  delay(nNum_blow_delay)
+  //to blow end
+  movej(l_pPoint_blow,t1,x_mMdesc_slow)
+  waitEndMove()
+  //vb off
+  dDio_t1_vb=false  
+  //to safe
+  movej(l_pPoint_safe,t1,x_mMdesc)
+  waitEndMove()
+end]]></Code>
+  </Program>
+</Programs>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ISO15745Profile xmlns="http://www.profibus.com/GSDML/2003/11/DeviceProfile" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.profibus.com/GSDML/2003/11/DeviceProfile ..\XSD\GSDML-DeviceProfile-v2.1.xsd">
+	<ProfileHeader>
+		<ProfileIdentification>PROFINET Device Profile</ProfileIdentification>
+		<ProfileRevision>1.00</ProfileRevision>
+		<ProfileName>Device Profile for PROFINET Devices</ProfileName>
+		<ProfileSource>PROFIBUS Nutzerorganisation e. V. (PNO)</ProfileSource>
+		<ProfileClassID>Device</ProfileClassID>
+		<ISO15745Reference>
+			<ISO15745Part>4</ISO15745Part>
+			<ISO15745Edition>1</ISO15745Edition>
+			<ProfileTechnology>GSDML</ProfileTechnology>
+		</ISO15745Reference>
+	</ProfileHeader>
+	<ProfileBody>
+		<DeviceIdentity VendorID="0x0127" DeviceID="0x1001">
+			<InfoText TextId="BradCommunications PCU-ETHIO Interface Card"/>
+			<VendorName Value="Molex"/>
+		</DeviceIdentity>
+		<DeviceFunction>
+			<Family MainFamily="I/O" ProductFamily="BradCommunications PROFINET IO"/>
+		</DeviceFunction>
+		<ApplicationProcess>
+			<DeviceAccessPointList>
+				<DeviceAccessPointItem ID="PCUETHIO" PhysicalSlots="0..2" ModuleIdentNumber="0x10100000" MinDeviceInterval="32" ImplementationType="Intel" DNS_CompatibleName="ethio-pnio-dev" FixedInSlots="0" ObjectUUID_LocalIndex="1">
+					<!--                 -->
+					<!--                 -->
+					<ModuleInfo>
+						<Name TextId="PCUETHIO Name"/>
+						<InfoText TextId="PCUETHIO Desc"/>
+						<VendorName Value="Molex"/>
+						<OrderNumber Value="DRL-EPN-PCU"/>
+					</ModuleInfo>
+					<IOConfigData MaxInputLength="1440" MaxOutputLength="1440"/>
+					<UseableModules>
+						<ModuleItemRef ModuleItemTarget="1" AllowedInSlots="1" FixedInSlots="1"/>
+						<ModuleItemRef ModuleItemTarget="2" AllowedInSlots="2" FixedInSlots="2"/>
+					</UseableModules>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="VSMI 1" SubmoduleIdentNumber="0x10110000" API="0">
+							<IOData IOCS_Length="1"/>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+					<Graphics>
+						<GraphicItemRef Type="DeviceSymbol" GraphicItemTarget="ID_Graph_1"/>
+					</Graphics>
+				</DeviceAccessPointItem>
+			</DeviceAccessPointList>
+			<ModuleList>
+				<ModuleItem ID="1" ModuleIdentNumber="0x10200000">
+					<ModuleInfo CategoryRef="Digital_Input">
+						<Name TextId="Input"/>
+						<InfoText TextId="Input Desc"/>
+					</ModuleInfo>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="1" SubmoduleIdentNumber="0x10220002" API="0">
+							<IOData IOPS_Length="1" IOCS_Length="1">
+								<Input>
+									<DataItem DataType="OctetString" Length="2" TextId="Data"/>
+								</Input>
+							</IOData>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+				</ModuleItem>
+				<ModuleItem ID="2" ModuleIdentNumber="0x10300000">
+					<ModuleInfo CategoryRef="Digital_Output">
+						<Name TextId="Output"/>
+						<InfoText TextId="Output Desc"/>
+					</ModuleInfo>
+					<VirtualSubmoduleList>
+						<VirtualSubmoduleItem ID="2" SubmoduleIdentNumber="0x10330002" API="0">
+							<IOData IOPS_Length="1" IOCS_Length="1">
+								<Output>
+									<DataItem DataType="OctetString" Length="2" TextId="Data"/>
+								</Output>
+							</IOData>
+						</VirtualSubmoduleItem>
+					</VirtualSubmoduleList>
+				</ModuleItem>
+				<!--                         -->
+			</ModuleList>
+			<!--       -->
+			<!-- Image -->
+			<!--       -->
+			<GraphicsList>
+				<GraphicItem ID="ID_Graph_1" GraphicFile="GSDML_0127_1001_PCU-ETHIO"/>
+			</GraphicsList>
+			<CategoryList>
+				<CategoryItem ID="Digital_Input" TextId="DI Module"/>
+				<CategoryItem ID="Digital_Output" TextId="DO Module"/>
+			</CategoryList>
+			<!--      -->
+			<!-- Text -->
+			<!--      -->
+			<ExternalTextList>
+				<PrimaryLanguage>
+					<!---->
+					<!-- Information -->
+					<Text TextId="General parameters" Value="General parameters"/>
+					<!-- Information -->
+					<Text TextId="Molex" Value="Molex"/>
+					<Text TextId="BradCommunications PCU-ETHIO Interface Card" Value="BradCommunications PROFINET IO Device  Interface Card"/>
+					<Text TextId="BradCommunications PROFINET IO" Value="BradCommunications PROFINET IO"/>
+					<Text TextId="PCU-ETHIO" Value="BradCommunications PCU-ETHIO Interface Card 2 In/2 Out"/>
+					<Text TextId="IO Device" Value="I/O Device"/>
+					<Text TextId="IO Device IP67" Value="BradControl Digital Input/Output IP67"/>
+					<Text TextId="PCUETHIO Name" Value="IO Device PCU-ETHIO 2 In/2 Out"/>
+					<Text TextId="PCUETHIO Desc" Value="BradCommunications PROFINET IO Device  Interface Card, FixedInSlots configuration (2 In/2 Out) Big Endian  Data Format Order "/>
+					<Text TextId="Data" Value="Data"/>
+					<Text TextId="BradControl I/O Device" Value="BradControl IO-Device"/>
+					<Text TextId="General head parameters" Value="General head parameters"/>
+					<Text TextId="DRL-PFN-PCU" Value="DRL-PFN-PCU"/>
+					<Text TextId="Data-Format Desc" Value="Data-Format"/>
+					<!-- Module Name -->
+					<Text TextId="Input Desc" Value="Digital Input module :  2 Bytes Data In"/>
+					<Text TextId="Input" Value="Input 2 Bytes"/>
+					<Text TextId="Input Unsigned 1" Value="Input Unsigned 1"/>
+					<Text TextId="Input Unsigned 2" Value="Input Unsigned 2"/>
+					<Text TextId="Input Unsigned 4" Value="Input Unsigned 4"/>
+					<Text TextId="Input Unsigned 8" Value="Input Unsigned 8"/>
+					<Text TextId="Input Unsigned 16" Value="Input Unsigned 16"/>
+					<Text TextId="Input Unsigned 32" Value="Input Unsigned 32"/>
+					<Text TextId="Input Integer 8" Value="Input Integer 8"/>
+					<Text TextId="Input Integer 16" Value="Input Integer 16"/>
+					<Text TextId="Input Integer 32" Value="Input Integer 32"/>
+					<Text TextId="Input Float 32" Value="Input Float 32"/>
+					<Text TextId="Input B1" Value="Input 1  Byte Buffer"/>
+					<Text TextId="Input B2" Value="Input 2  Bytes Buffer"/>
+					<Text TextId="Input B4" Value="Input 4  Bytes Buffer"/>
+					<Text TextId="Input B8" Value="Input 8  Bytes Buffer"/>
+					<Text TextId="Input B16" Value="Input 16 Bytes Buffer"/>
+					<Text TextId="Input B32" Value="Input 32 Bytes Buffer"/>
+					<Text TextId="Input B64" Value="Input 64 Bytes Buffer"/>
+					<Text TextId="Input B128" Value="Input 128 Bytes Buffer"/>
+					<Text TextId="Input B256" Value="Input 256 Bytes Buffer"/>
+					<Text TextId="Input B512" Value="Input 512 Bytes Buffer"/>
+					<Text TextId="Input B1024" Value="Input 1024 Bytes Buffer"/>
+					<Text TextId="Input B1436" Value="Input 1436 Bytes Buffer"/>
+					<Text TextId="Output" Value="Output 2 Bytes"/>
+					<Text TextId="Output Desc" Value="Digital Output module : 2 Bytes Data Out"/>
+					<Text TextId="Output Integer 8" Value="Output Integer 8"/>
+					<Text TextId="8 Integer Input 8 Integer Output" Value="8 Integer Input 8 Integer Output"/>
+					<!-- Categorie Name -->
+					<Text TextId="DI Module" Value="Digital Input Module"/>
+					<Text TextId="DO Module" Value="Digital Output Module"/>
+					<Text TextId="AI Module" Value="Analogue Input Module"/>
+					<Text TextId="AO Module" Value="Analogue Ouput Module"/>
+					<Text TextId="BI Module" Value="Buffer Input Module"/>
+					<Text TextId="BO Module" Value="Buffer Ouput Module"/>
+					<Text TextId="T_DAP_InterfaceModule" Value="Module Interface"/>
+					<Text TextId="T_Port1" Value="Port 1"/>
+					<Text TextId="Inputs" Value="Inputs"/>
+					<Text TextId="Outputs" Value="Outputs"/>
+					<!-- Record-->
+					<Text TextId="not active" Value="not active"/>
+					<Text TextId="active" Value="active"/>
+					<Text TextId="Apply Output fallback" Value="Apply Output Reply Value"/>
+					<Text TextId="Hold Output" Value="Hold Output Value"/>
+					<Text TextId="100ms" Value="100ms"/>
+					<Text TextId="200ms" Value="200ms"/>
+					<Text TextId="300ms" Value="300ms"/>
+					<Text TextId="400ms" Value="400ms"/>
+					<Text TextId="500ms" Value="500ms"/>
+					<Text TextId="600ms" Value="600ms"/>
+					<Text TextId="700ms" Value="700ms"/>
+					<Text TextId="800ms" Value="800ms"/>
+					<Text TextId="900ms" Value="900ms"/>
+					<Text TextId="1000ms" Value="1000ms"/>
+					<Text TextId="1100ms" Value="1100ms"/>
+					<Text TextId="1200ms" Value="1200ms"/>
+					<Text TextId="1300ms" Value="1300ms"/>
+					<Text TextId="1400ms" Value="1400ms"/>
+					<Text TextId="1500ms" Value="1500ms"/>
+					<Text TextId="1600ms" Value="1600ms"/>
+					<Text TextId="1700ms" Value="1700ms"/>
+					<Text TextId="1800ms" Value="1800ms"/>
+					<Text TextId="1900ms" Value="1900ms"/>
+					<Text TextId="2000ms" Value="2000ms"/>
+					<!-- Record-->
+					<Text TextId="Help_Watchdog_Value" Value="Watchdog TimeOut"/>
+					<Text TextId="Help_Watchdog_Behaviour" Value="Output Apply Mode"/>
+					<Text TextId="Help_Output" Value="Help Output"/>
+					<Text TextId="Help_Input" Value="Help Input"/>
+					<Text TextId="Output_Pin_0" Value="Reply Value 1.A"/>
+					<Text TextId="Output_Pin_1" Value="Reply Value 1.B"/>
+					<Text TextId="Output_Pin_2" Value="Reply Value 2.A"/>
+					<Text TextId="Output_Pin_3" Value="Reply Value 2.B"/>
+					<Text TextId="Output_Pin_4" Value="Reply Value 3.A"/>
+					<Text TextId="Output_Pin_5" Value="Reply Value 3.B"/>
+					<Text TextId="Output_Pin_6" Value="Reply Value 4.A"/>
+					<Text TextId="Output_Pin_7" Value="Reply Value 4.B"/>
+					<Text TextId="Output_Pin_8" Value="Reply Value 5.A"/>
+					<Text TextId="Output_Pin_9" Value="Reply Value 5.B"/>
+					<Text TextId="Output_Pin_10" Value="Reply Value 6.A"/>
+					<Text TextId="Output_Pin_11" Value="Reply Value 6.B"/>
+					<Text TextId="Output_Pin_12" Value="Reply Value 7.A"/>
+					<Text TextId="Output_Pin_13" Value="Reply Value 7.B"/>
+					<Text TextId="Output_Pin_14" Value="Reply Value 8.A"/>
+					<Text TextId="Output_Pin_15" Value="Reply Value 8.B"/>
+					<!-- Record-->
+					<Text TextId="True" Value="True"/>
+					<Text TextId="False" Value="False"/>
+					<!-- Record-->
+					<Text TextId="Help_InputFilter" Value="Input Filter"/>
+					<Text TextId="Help_InputType" Value="Input Type"/>
+					<Text TextId="0.0ms" Value="0.0ms"/>
+					<Text TextId="0.5ms" Value="0.5ms"/>
+					<Text TextId="1.0ms" Value="1.0ms"/>
+					<Text TextId="1.5ms" Value="1.5ms"/>
+					<Text TextId="2.0ms" Value="2.0ms"/>
+					<Text TextId="2.5ms" Value="2.5ms"/>
+					<Text TextId="5.0ms" Value="5.0ms"/>
+					<Text TextId="PNP" Value="PNP"/>
+					<Text TextId="NPN" Value="NPN"/>
+					<Text TextId="Input Module Parameters" Value="Input Module Parameters"/>
+					<!-- Graphic-->
+					<Text TextId="ID_Graph_1" Value="ID_Graph_1"/>
+				</PrimaryLanguage>
+			</ExternalTextList>
+		</ApplicationProcess>
+	</ProfileBody>
+</ISO15745Profile>

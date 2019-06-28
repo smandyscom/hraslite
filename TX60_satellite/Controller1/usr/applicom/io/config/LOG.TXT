@@ -1,0 +1,2 @@
+Start Logger Friday, December 02, 2016 At 16:26                             ** count:0001  @ line:0059 file:AppDebug.cpp 
+End Logger Friday, December 02, 2016 At 16:26                               ** count:0001  @ line:0131 file:AppDebug.cpp 

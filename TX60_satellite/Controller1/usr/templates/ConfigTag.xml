@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<TOPICSLIST>
+	<TOPIC Name = "TOPIC1-A" Card = "1" Channel = "0" Equipement = "0" RefreshPeriod = "200" Actif = "1">
+		<MODULE Tag_name_root = "BLOCKA" IDModule = "OUTPUT_SIZE" InputSize = "0" OutputSize = "16">
+			<ITEM Name = "O-DATA-0" Syntaxe = "%QB0" Offset = "0"/>
+			<ITEM Name = "O-DATA-1" Syntaxe = "%QB1" Offset = "1"/>
+		</MODULE>
+		<MODULE Tag_name_root = "BLOCKB" IDModule = "INPUT_SIZE" InputSize = "16" OutputSize = "0">
+			<ITEM Name = "I-DATA-0" Syntaxe = "%IB0" Offset = "0"/>
+			<ITEM Name = "I-DATA-1" Syntaxe = "%IB1" Offset = "1"/>
+		</MODULE>
+	</TOPIC>
+</TOPICSLIST>

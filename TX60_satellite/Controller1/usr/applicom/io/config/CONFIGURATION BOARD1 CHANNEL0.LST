@@ -1,0 +1,74 @@
++---------------------------------------------------------------+
+| Configuration listing for board 1  channel 0                |
++---------------------------------------------------------------+
+| COMPANY = Molex
+| DATE    = Friday, December 02, 2016 At 16:48
+| VERSION = 4.1 Build 9
+| CONFIGURATION NAME = D_TEST
+| BOARD LOCATION = LAN TCP/IP
++---------------------------------------------------------------+
+-----------------------------------------------------------------
+Channel Information
+-----------------------------------------------------------------
+  
+  >> General :
+     Request Time-out                   = 10                       s         
+     Max. Request                       = 6                                  
+  
+  >> Ethernet :
+     Baud Rate                          = Auto                               
+     Frame format                       = Ethernet II                        
+     Connection Lifetime                = 3                        Minutes   
+     Automatic Address Calculation      = Automatic Address                  
+     MAC Address                        = 00-A0-91-XX-XX-XX                  
+  
+  >> ProfinetIO :
+     IO-Device State at Startup         = RUN                                
+     IOPS/IOCS Management               = Disabled                           
+     
+     >> RTA
+       Request Time-out                 = 3 x100 ms
+       Request Retry                    = 3 
+     
+     >> RPC
+       Client
+         Maximum Number of Ping             = 3 
+         Maximum Number of Resend           = 3 
+         Time-out on CANCEL Request         = 1000 ms
+         Time-out on Fragment Acknowledge   = 2000 ms
+         Time-out Before Sending First Ping = 2000 ms
+         Time-out Before Resending Ping     = 2000 ms
+     
+       Server
+         Maximum Number of Resending        = 3 
+         Time-out Before Resending          = 2000 ms
+     
+
+-----------------------------------------------------------------
+TCP/IP Information
+-----------------------------------------------------------------
+  
+  >> General :
+     IP Address                         = 192.168.000.250                    
+     Sub-Network Mask                   = 255.255.255.000                    
+     Gateway IP Address                 = 000.000.000.000                    
+     Device Name                        = ethio-pnio-dev                     
+  
+  >> Advanced :
+     Number of retries                  = 2                                  
+     Interval between retries           = 1                        s         
+     Connection servicing               = Yes                                
+-----------------------------------------------------------------
+Device 0
+-----------------------------------------------------------------
+     Name                               = Local IO-Device
+  
+  >> General :
+     Number                               0                                                             
+     State                                Active Device                                                 
+     Topic Name                           TOPIC1-A                                                      
+     Comment                                                                                            
+     Output Size for the Slot 1           2                                                   Bytes     
+     Input Size for the Slot 2            2                                                   Bytes     
+     Device Data Order                    Big Endian                                                    
+     Device Name                          ethio-pnio-dev                                                

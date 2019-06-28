@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<arm>
+  <String name="date" value="25 MAY 2010  18:28" />
+  <String name="orderNumber" value="F13_5SA8B1_A_01" />
+  <String name="arm" value="tx60-S1" />
+  <String name="tuning" value="" />
+  <String name="mount" value="floor" />
+  <FloatArray name="minArmJointPos" >
+    <Float index="0" value="-99999" />
+    <Float index="1" value="-99999" />
+    <Float index="2" value="-99999" />
+    <Float index="3" value="-99999" />
+    <Float index="4" value="-99999" />
+    <Float index="5" value="-270" />
+  </FloatArray>
+  <FloatArray name="maxArmJointPos" >
+    <Float index="0" value="99999" />
+    <Float index="1" value="99999" />
+    <Float index="2" value="99999" />
+    <Float index="3" value="99999" />
+    <Float index="4" value="99999" />
+    <Float index="5" value="270" />
+  </FloatArray>
+  <ArmJntRange>
+  </ArmJntRange>
+  <FloatArray name="zeroOffset" >
+    <Float index="0" value="217200.470581" />
+    <Float index="1" value="287711.757202" />
+    <Float index="2" value="679394.102783" />
+    <Float index="3" value="374932.661133" />
+    <Float index="4" value="1218549.830933" />
+    <Float index="5" value="865085.383301" />
+  </FloatArray>
+  <FloatArray name="phaseOffset" >
+    <Float index="0" value="235.733643" />
+    <Float index="1" value="326.826782" />
+    <Float index="2" value="244.14917" />
+    <Float index="3" value="339.104004" />
+    <Float index="4" value="328.024292" />
+    <Float index="5" value="36.430664" />
+  </FloatArray>
+  <DhArray name="dhOffset" >
+    <DH index="0" theta="0" d="0" a="0" b="0" alpha="0" beta="0" />
+    <DH index="1" theta="0" d="0" a="0" b="0" alpha="0" beta="0" />
+    <DH index="2" theta="0" d="0" a="0" b="0" alpha="0" beta="0" />
+    <DH index="3" theta="0" d="0" a="0" b="0" alpha="0" beta="0" />
+    <DH index="4" theta="0" d="0" a="0" b="0" alpha="0" beta="0" />
+    <DH index="5" theta="0" d="0" a="0" b="0" alpha="0" beta="0" />
+  </DhArray>
+  <Float name="flangeLengthOffset" value="0" />
+  <StringArray name="motorType" >
+    <String index="0" value="" />
+    <String index="1" value="" />
+    <String index="2" value="" />
+    <String index="3" value="" />
+    <String index="4" value="" />
+    <String index="5" value="" />
+  </StringArray>
+  <FloatArray name="userMark" >
+    <Float index="0" value="-31.150189" />
+    <Float index="1" value="-67.875537" />
+    <Float index="2" value="-46.759415" />
+    <Float index="3" value="179.999318" />
+    <Float index="4" value="65.365109" />
+    <Float index="5" value="193.849234" />
+  </FloatArray>
+  <FloatArray name="factoryMark" >
+    <Float index="0" value="-0.174638" />
+    <Float index="1" value="0.000398" />
+    <Float index="2" value="-0.120136" />
+    <Float index="3" value="-0.024794" />
+    <Float index="4" value="0.00029" />
+    <Float index="5" value="-0.266763" />
+  </FloatArray>
+  <Bool name="factoryMarkLocked" value="true" />
+  <FloatArray name="jntFlexOffset" >
+    <Float index="0" value="0" />
+    <Float index="1" value="0" />
+    <Float index="2" value="0" />
+    <Float index="3" value="0" />
+    <Float index="4" value="0" />
+    <Float index="5" value="0" />
+  </FloatArray>
+</arm>

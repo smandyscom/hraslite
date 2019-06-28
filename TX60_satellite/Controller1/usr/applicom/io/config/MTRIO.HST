@@ -1,0 +1,21 @@
+[General]
+BOARD ACCESS=LAN TCP/IP
+Recording mode=TRUE
+BOARD TYPE=HARD
+Board Type1=HARD
+Board Type2=NO BOARD
+Board Type3=NO BOARD
+Board Type4=NO BOARD
+Board Type5=NO BOARD
+Board Type6=NO BOARD
+Board Type7=NO BOARD
+Board Type8=NO BOARD
+[LANTCPIP]
+Address Server=192.168.0.250
+Port Server=5001
+Files Transfert=1
+[CONSOLE]
+Turbo Debugging=FALSE
+ExperMode=FALSE
+LogMessage=FALSE
+LogSize=10000
