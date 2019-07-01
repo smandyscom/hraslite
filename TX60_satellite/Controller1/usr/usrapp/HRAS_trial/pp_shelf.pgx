@@ -9,17 +9,17 @@
   call key_check("Reload")
 
 
-  call regular_pick(t1,mNomSpeed,f1pick,dDio_t1_vg,dDio_t1_vs,false)
-  call regular_place(t1,mNomSpeed,f1place,dDio_t1_vg,false)
+  call regular_pick(t1,mNomSpeed,f1pick,dDio_t1_vs,false)
+  call regular_place(t1,mNomSpeed,f1place,false)
 
-  call regular_pick(t1,mNomSpeed,f2pick,dDio_t1_vg,dDio_t1_vs,false)
+  call regular_pick(t1,mNomSpeed,f2pick,dDio_t1_vs,false)
   //show message and get input (if fixture applied
   call key_check("Fixture close")
 
   call f2_place(mNomSpeed,mSlowSpeed)
 
-  call regular_pick(t3,mNomSpeed,f3pick,dDio_t3_vs,dDio_t3_vs,false)
-  call regular_place(t3,mNomSpeed,f3place,dDio_t3_vg,true)
+  call regular_pick(t3,mNomSpeed,f3pick,dDio_t3_vs,false)
+  call regular_place(t3,mNomSpeed,f3place,true)
 
 end]]></Code>
   </Program>

@@ -17,6 +17,11 @@
       <Node Path="TX60_satellite" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\f1_cell_count" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\f1_cell_count\Parameters" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\f1_cell_count\Locals" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\f1_cell_pick" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\f1_cell_pick\Locals" IsExpanded="true" />
     </Nodes>
   </Option>
   <Option Name="GeometryView">

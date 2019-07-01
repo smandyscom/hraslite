@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="pick_cells">
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1">
+      <Parameter name="x_nNum_choose" type="num" xsi:type="element" />
+    </Parameters>
+    <Locals>
+      <Local name="l_nNum_cRow" type="num" xsi:type="array" size="1" />
+      <Local name="l_nNum_cCol" type="num" xsi:type="array" size="1" />
+      <Local name="l_pPoint_cur" type="point" xsi:type="array" size="1" />
+      <Local name="l_tTool_cur" type="tool" xsi:type="array" size="1" />
+      <Local name="l_pPoint_lb_cur" type="point" xsi:type="array" size="1" />
+      <Local name="l_nNum_lRow" type="num" xsi:type="array" size="1" />
+      <Local name="l_nNum_lCol" type="num" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  //pick from f1 put to bin
+  l_nNum_cRow = 0
+  l_nNum_cCol = 0
+  
+  
+  switch x_nNum_choose
+    case 1
+      //f1
+      l_nNum_lCol = 5
+      l_nNum_lRow = 5
+      
+      l_tTool_cur = t1
+    break
+    case 2
+      //f2
+      l_nNum_lCol = 12
+      l_nNum_lRow = 3
+      
+      l_tTool_cur = t1
+    break
+    case 3
+      //f3
+      l_nNum_lCol = 3
+      l_nNum_lRow = 6
+      
+      l_tTool_cur = t3
+    break
+    
+  endSwitch
+  
+  
+  for l_nNum_cCol=0 to l_nNum_lCol
+    //column
+    for l_nNum_cRow=0 to l_nNum_lRow
+      //row
+      
+      //pick position count
+      call calculate_pick(l_nNum_cRow,l_nNum_cCol,l_pPoint_cur,x_nNum_choose)
+      //pick (not defined yet
+      call regular_pick(l_tTool_cur,mNomSpeed,l_pPoint_cur,dDio_t1_vs,false)
+      
+      //bin place (bin not defined yet
+      call regular_place(l_tTool_cur,mNomSpeed,f3place,false)
+      
+    endFor
+  endFor
+  
+end]]></Code>
+  </Program>
+</Programs>
