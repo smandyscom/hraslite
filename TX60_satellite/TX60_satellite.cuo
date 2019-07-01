@@ -8,8 +8,10 @@
       <Node Path="TX60_satellite" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\dio" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\dio\dDio_t1_vb" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\mdesc" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\screen" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\screen\sScreen_menu" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\screen\sScreen_ppShelf" IsExpanded="true" />
     </Nodes>
   </Option>
   <Option Name="CellExplorer">
@@ -17,11 +19,14 @@
       <Node Path="TX60_satellite" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\f1_cell_count" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\f1_cell_count\Parameters" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\f1_cell_count\Locals" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\f1_cell_pick" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\f1_cell_pick\Locals" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\pick_cells\Parameters" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\pick_cells\Locals" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\show_menu" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\show_menu\Parameters" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\show_menu\Locals" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\start" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\start\Parameters" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\start\Locals" IsExpanded="true" />
     </Nodes>
   </Option>
   <Option Name="GeometryView">
@@ -29,24 +34,30 @@
       <Node Path="TX60_satellite" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\flange[0]" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\flange[0]\ca" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\flange[0]\ca\ca[0]" IsExpanded="true" />
     </Nodes>
   </Option>
   <Option Name="Breakpoints">
     <Breakpoints>
       <Breakpoint Controller="Controller1" Application="Disk://HRAS_trial/HRAS_trial.pjx" ProgramName="f2_place" Line="19" />
+      <Breakpoint Controller="Controller1" Application="Disk://HRAS_trial/HRAS_trial.pjx" ProgramName="start" Line="10" />
+      <Breakpoint Controller="Controller1" Application="Disk://HRAS_trial/HRAS_trial.pjx" ProgramName="start" Line="14" />
+      <Breakpoint Controller="Controller1" Application="Disk://HRAS_trial/HRAS_trial.pjx" ProgramName="start" Line="18" />
+      <Breakpoint Controller="Controller1" Application="Disk://HRAS_trial/HRAS_trial.pjx" ProgramName="start" Line="22" />
+      <Breakpoint Controller="Controller1" Application="Disk://HRAS_trial/HRAS_trial.pjx" ProgramName="start" Line="31" />
+      <Breakpoint Controller="Controller1" Application="Disk://HRAS_trial/HRAS_trial.pjx" ProgramName="start" Line="6" />
+      <Breakpoint Controller="Controller1" Application="Disk://HRAS_trial/HRAS_trial.pjx" ProgramName="show_menu" Line="20" />
     </Breakpoints>
   </Option>
   <Option Name="IOsControlPanel">
     <Ios />
   </Option>
   <Option Name="Watches">
-    <Watches />
+    <Watches>
+      <Watch Controller="Controller1" Application="Disk://HRAS_trial/HRAS_trial.pjx">pPointRx_f1_lb</Watch>
+    </Watches>
   </Option>
   <Option Name="3DView">
-    <_3DView Visible="false" />
+    <_3DView Visible="true" />
   </Option>
   <Option Name="SynchronizerMode">
     <Synchronizers>

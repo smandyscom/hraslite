@@ -6,7 +6,7 @@
   //assumed that start from cal_ref_1
 
   //show message and get input (if reloaded all material
-  call key_check("Reload")
+  call show_check("Reload")
 
 
   call regular_pick(t1,mNomSpeed,f1pick,dDio_t1_vs,false)
@@ -14,7 +14,7 @@
 
   call regular_pick(t1,mNomSpeed,f2pick,dDio_t1_vs,false)
   //show message and get input (if fixture applied
-  call key_check("Fixture close")
+  call show_check("Fixture close")
 
   call f2_place(mNomSpeed,mSlowSpeed)
 

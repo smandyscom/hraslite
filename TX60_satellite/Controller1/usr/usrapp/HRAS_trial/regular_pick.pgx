@@ -28,11 +28,10 @@
   movej(l_pPoint_pick,x_tTool,x_mMdesc)
   waitEndMove()
   //vg on
-  open(x_tTool)
-  //x_tTool.gripper = true
-  //delay(x_tTool.otime)
-
-  //dioSet(x_dDio_vg,1)
+  if ioStatus(x_tTool.gripper) >= 0
+     //once io is working
+    open(x_tTool)
+  endIf
 
   //to safe
   movej(l_pPoint_safe,x_tTool,x_mMdesc)

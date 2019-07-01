@@ -15,9 +15,7 @@
     </Locals>
     <Code><![CDATA[begin
   //pick from f1 put to bin
-  l_nNum_cRow = 0
-  l_nNum_cCol = 0
-  
+  call show_check("Reload")
   
   switch x_nNum_choose
     case 1
@@ -45,9 +43,9 @@
   endSwitch
   
   
-  for l_nNum_cCol=0 to l_nNum_lCol
+  for l_nNum_cCol=0 to l_nNum_lCol step 1
     //column
-    for l_nNum_cRow=0 to l_nNum_lRow
+    for l_nNum_cRow=0 to l_nNum_lRow step 1
       //row
       
       //pick position count
@@ -56,7 +54,7 @@
       call regular_pick(l_tTool_cur,mNomSpeed,l_pPoint_cur,dDio_t1_vs,false)
       
       //bin place (bin not defined yet
-      call regular_place(l_tTool_cur,mNomSpeed,f3place,false)
+      call regular_place(l_tTool_cur,mNomSpeed,ref,false)
       
     endFor
   endFor

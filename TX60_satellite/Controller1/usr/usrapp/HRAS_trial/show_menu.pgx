@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="show_menu">
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1">
+      <Parameter name="x_sScreen" type="screen" xsi:type="element" use="reference" />
+      <Parameter name="x_nNum_choosed" type="num" xsi:type="element" use="reference" />
+    </Parameters>
+    <Code><![CDATA[begin
+  
+  
+  userPage(x_sScreen)
+  title(x_sScreen,"Choose sub")
+  
+  gotoxy(x_sScreen,0,0)
+  putln(x_sScreen,"F1)Filter 1 pick/bin")
+  gotoxy(x_sScreen,0,1)
+  putln(x_sScreen,"F2)Filter 2 pick/bin")
+  gotoxy(x_sScreen,0,2)
+  putln(x_sScreen,"F3)Filter 3 pick/bin")
+  gotoxy(x_sScreen,0,3)
+  putln(x_sScreen,"F4)Shelf pick/fixture")
+  gotoxy(x_sScreen,0,4)
+  putln(x_sScreen,"F5)Assemble")
+  
+  //anykey
+  x_nNum_choosed = get(x_sScreen)
+  cls(x_sScreen)
+end]]></Code>
+  </Program>
+</Programs>

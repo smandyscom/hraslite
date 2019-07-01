@@ -4,12 +4,13 @@
   <Programs>
     <Program file="calculate_pick.pgx" />
     <Program file="f2_place.pgx" />
-    <Program file="key_check.pgx" />
     <Program file="pick_cells.pgx" />
     <Program file="pp_cells.pgx" />
     <Program file="pp_shelf.pgx" />
     <Program file="regular_pick.pgx" />
     <Program file="regular_place.pgx" />
+    <Program file="show_check.pgx" />
+    <Program file="show_menu.pgx" />
     <Program file="start.pgx" />
     <Program file="stop.pgx" />
   </Programs>

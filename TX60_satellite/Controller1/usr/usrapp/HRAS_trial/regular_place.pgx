@@ -29,8 +29,10 @@
   movej(l_pPoint_drop,x_tTool,x_mMdesc)
   waitEndMove()
   //vg off
-  
-  close(x_tTool)
+  if ioStatus(x_tTool.gripper) >= 0
+    //once io is working
+    close(x_tTool)
+  endIf
   
   //additional press
   if x_bBool_press

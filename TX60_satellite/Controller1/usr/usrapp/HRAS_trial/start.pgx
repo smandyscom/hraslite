@@ -2,20 +2,38 @@
 <Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
   <Program name="start">
     <Locals>
-      <Local name="l_pPoint_press" type="point" xsi:type="array" size="1" />
+      <Local name="l_nNum_choosen" type="num" xsi:type="array" size="1" />
     </Locals>
     <Code><![CDATA[begin
   resetMotion()
 
-  //call f2_place(mNomSpeed)
+  call show_menu(sScreen_ppShelf,l_nNum_choosen)
+  
   while true
-    call pp_shelf()
-    
-    
-    //dDio_t1_vb = true
-    //delay(5)
-    //dDio_t1_vb = false
-    //delay(5)
+    switch l_nNum_choosen
+      case 271
+        //F1
+        call pick_cells(1)
+      break
+      case 272
+        //F2
+        call pick_cells(2)
+      break
+      case 273
+        //F3
+        call pick_cells(3)
+      break
+      case 274
+        //F4
+        call pp_shelf()
+      break
+      case 275
+        //F5
+      break
+      default
+        return
+      break
+    endSwitch
   endWhile
 
 end]]></Code>
