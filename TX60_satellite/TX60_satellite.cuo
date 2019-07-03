@@ -57,7 +57,7 @@
     </Watches>
   </Option>
   <Option Name="3DView">
-    <_3DView Visible="true" />
+    <_3DView Visible="false" />
   </Option>
   <Option Name="SynchronizerMode">
     <Synchronizers>

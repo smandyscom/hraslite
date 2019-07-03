@@ -3,12 +3,15 @@
   <Parameters version="s7.10.2" stackSize="5000" millimeterUnit="true" />
   <Programs>
     <Program file="calculate_pick.pgx" />
+    <Program file="calculate_rc.pgx" />
+    <Program file="calculate_total.pgx" />
     <Program file="f2_place.pgx" />
     <Program file="pick_cells.pgx" />
     <Program file="pp_cells.pgx" />
     <Program file="pp_shelf.pgx" />
     <Program file="regular_pick.pgx" />
     <Program file="regular_place.pgx" />
+    <Program file="return_config.pgx" />
     <Program file="show_check.pgx" />
     <Program file="show_menu.pgx" />
     <Program file="start.pgx" />
