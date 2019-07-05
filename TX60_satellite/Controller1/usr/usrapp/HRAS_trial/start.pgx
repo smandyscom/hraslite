@@ -29,6 +29,7 @@
       break
       case 275
         //F5
+        call pp_cells()
       break
       default
         return

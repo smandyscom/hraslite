@@ -1,12 +1,78 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
   <Program name="pp_cells">
+    <Locals>
+      <Local name="l_nNum_f3_idx" type="num" xsi:type="array" size="1" />
+      <Local name="l_nNum_f2_idx" type="num" xsi:type="array" size="1" />
+      <Local name="l_nNum_f1_idx" type="num" xsi:type="array" size="1" />
+      <Local name="l_nNum_f3_lim" type="num" xsi:type="array" size="1" />
+      <Local name="l_nNum_f2_lim" type="num" xsi:type="array" size="1" />
+      <Local name="l_nNum_f1_lim" type="num" xsi:type="array" size="1" />
+      <Local name="l_nNum_cRow" type="num" xsi:type="array" size="1" />
+      <Local name="l_nNum_cCol" type="num" xsi:type="array" size="1" />
+      <Local name="l_pPoint_cur" type="point" xsi:type="array" size="1" />
+    </Locals>
     <Code><![CDATA[begin
   
-  //reload reminder
+  //initialize
+  call calculate_total(1,l_nNum_f1_lim)
+  call calculate_total(2,l_nNum_f2_lim)
+  call calculate_total(3,l_nNum_f3_lim)
   
-  //f1 cell pick , warning if runs out
-  //f1 place
+  l_nNum_f1_idx = 0
+  l_nNum_f2_idx = 0
+  l_nNum_f3_idx = 0
+  
+  while true
+    //reload bottom reminder
+    call show_check("Reload bottom")
+
+    //runout remider
+    if l_nNum_f1_idx > l_nNum_f1_lim
+      //warning if runs out
+      call show_check("Reload F1")
+      //reset
+      l_nNum_f1_idx = 0
+    endIf
+    call calculate_rc(l_nNum_f1_idx,1,l_nNum_cRow,l_nNum_cCol)
+    call calculate_pick(l_nNum_cRow,l_nNum_cCol,l_pPoint_cur,1)
+    //f1 cell pick 
+    call regular_pick(t1,mNomSpeed,l_pPoint_cur,dDio_t1_vs,false)  
+    //f1 place
+    call regular_place(t1,mNomSpeed,f1place,false)
+
+
+    //runout remider
+    if l_nNum_f2_idx > l_nNum_f2_lim
+      //warning if runs out
+      call show_check("Reload F2")
+      //reset
+      l_nNum_f2_idx = 0
+    endIf
+    call calculate_rc(l_nNum_f2_idx,2,l_nNum_cRow,l_nNum_cCol)
+    call calculate_pick(l_nNum_cRow,l_nNum_cCol,l_pPoint_cur,2)
+    //f2 cell pick 
+    call regular_pick(t1,mNomSpeed,l_pPoint_cur,dDio_t1_vs,false)
+    //fixture reminder
+    call show_check("Place fixture")
+    //f2 place
+    call f2_place(mNomSpeed,mSlowSpeed)
+
+    //runout reminder
+    if l_nNum_f3_idx > l_nNum_f3_lim
+      //warning if runs out
+      call show_check("Reload F3")
+      //reset
+      l_nNum_f3_idx = 0
+    endIf
+    call calculate_rc(l_nNum_f3_idx,3,l_nNum_cRow,l_nNum_cCol)
+    call calculate_pick(l_nNum_cRow,l_nNum_cCol,l_pPoint_cur,3)
+    //f3pick
+    call regular_pick(t3,mNomSpeed,l_pPoint_cur,dDio_t3_vs,false)
+    //f3place
+    call regular_place(t3,mNomSpeed,f3place,true)
+    
+  endWhile
   
   
 end]]></Code>

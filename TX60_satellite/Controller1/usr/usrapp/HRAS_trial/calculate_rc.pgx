@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="calculate_rc">
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1">
+      <Parameter name="x_nNum_index" type="num" xsi:type="element" />
+      <Parameter name="x_nNum_choose" type="num" xsi:type="element" />
+      <Parameter name="x_nNum_cRow" type="num" xsi:type="element" use="reference" />
+      <Parameter name="x_nNum_cCol" type="num" xsi:type="element" use="reference" />
+    </Parameters>
+    <Locals>
+      <Local name="l_nNum_lCol" type="num" xsi:type="array" size="1" />
+      <Local name="l_nNum_lRow" type="num" xsi:type="array" size="1" />
+    </Locals>
+    <Code><![CDATA[begin
+  
+  call return_config(x_nNum_choose,l_nNum_lRow,l_nNum_lCol)
+
+  //Quotien
+  x_nNum_cRow = x_nNum_index / l_nNum_lCol 
+  //Modulo reminder
+  x_nNum_cCol = x_nNum_index % l_nNum_lCol
+  
+  
+end]]></Code>
+  </Program>
+</Programs>
