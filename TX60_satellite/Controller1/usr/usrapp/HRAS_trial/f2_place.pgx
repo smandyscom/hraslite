@@ -27,20 +27,26 @@
   movej(l_pPoint_drop,t1,x_mMdesc)
   waitEndMove()
   //vg off
-  //vb on
-  //dioSet(dDio_t1_vg,0)
-  close(t1)
-  dDio_t1_vb=true
-  //on and delay
-  delay(nNum_blow_delay)
-  //to blow end
-  movej(l_pPoint_blow,t1,x_mMdesc_slow)
-  waitEndMove()
+  if ioStatus(t1.gripper) >= 0
+    close(t1)
+  endIf
+  if ioStatus(dDio_t1_vb) >= 0
+    dDio_t1_vb=true
+  endIf
+    
+    //on and delay
+    delay(nNum_blow_delay)
+    //to blow end
+    movej(l_pPoint_blow,t1,x_mMdesc_slow)
+    waitEndMove()
   //vb off
-  dDio_t1_vb=false  
-  //to safe
-  movej(l_pPoint_safe,t1,x_mMdesc)
-  waitEndMove()
+  if ioStatus(dDio_t1_vb) >= 0
+     dDio_t1_vb=false  
+  endIf
+ 
+    //to safe
+    movej(l_pPoint_safe,t1,x_mMdesc)
+    waitEndMove()
 end]]></Code>
   </Program>
 </Programs>

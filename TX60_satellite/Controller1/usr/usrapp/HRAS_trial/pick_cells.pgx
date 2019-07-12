@@ -36,7 +36,11 @@
   //calculate total
   call calculate_total(x_nNum_choose,l_nNum_total)
   
-  for l_nNum_current=0 to l_nNum_total step 1
+  for l_nNum_current=0 to(l_nNum_total-1) step 1
+    
+    //show progress
+    call show_progress(sScreen_ppShelf,l_nNum_current+1,l_nNum_total,6)
+    
     //row,col count
     call calculate_rc(l_nNum_current,x_nNum_choose,l_nNum_cRow,l_nNum_cCol)  
     //pick position count

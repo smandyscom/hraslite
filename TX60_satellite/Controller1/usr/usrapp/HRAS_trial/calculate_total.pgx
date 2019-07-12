@@ -12,7 +12,7 @@
     <Code><![CDATA[begin
   call return_config(x_nNum_choose,l_nNum_lRow,l_nNum_lCol)
     //(max index)
-  x_nNum_total = l_nNum_lRow * l_nNum_lCol
+  x_nNum_total = (l_nNum_lRow + 1) * (l_nNum_lCol+1)
 end]]></Code>
   </Program>
 </Programs>

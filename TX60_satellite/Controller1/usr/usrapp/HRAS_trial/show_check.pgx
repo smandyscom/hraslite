@@ -7,11 +7,11 @@
     <Code><![CDATA[begin
   userPage(sScreen_ppShelf)
   title(sScreen_ppShelf,x_sString_show)
-  gotoxy(sScreen_ppShelf,0,6)
+  gotoxy(sScreen_ppShelf,0,0)
   putln(sScreen_ppShelf,"Press any key")
   //anykey
   get(sScreen_ppShelf)
-  cls(sScreen_ppShelf)
+  //cls(sScreen_ppShelf)
 end]]></Code>
   </Program>
 </Programs>

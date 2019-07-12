@@ -16,9 +16,9 @@
   call return_config(x_nNum_choose,l_nNum_lRow,l_nNum_lCol)
 
   //Quotien
-  x_nNum_cRow = x_nNum_index / l_nNum_lCol 
+  x_nNum_cRow = roundDown(x_nNum_index / (l_nNum_lCol + 1)) 
   //Modulo reminder
-  x_nNum_cCol = x_nNum_index % l_nNum_lCol
+  x_nNum_cCol = x_nNum_index % (l_nNum_lCol+1)
   
   
 end]]></Code>

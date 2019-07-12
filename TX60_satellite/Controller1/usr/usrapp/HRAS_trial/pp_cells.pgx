@@ -28,7 +28,7 @@
     call show_check("Reload bottom")
 
     //runout remider
-    if l_nNum_f1_idx > l_nNum_f1_lim
+    if l_nNum_f1_idx >= l_nNum_f1_lim
       //warning if runs out
       call show_check("Reload F1")
       //reset
@@ -40,10 +40,14 @@
     call regular_pick(t1,mNomSpeed,l_pPoint_cur,dDio_t1_vs,false)  
     //f1 place
     call regular_place(t1,mNomSpeed,f1place,false)
-
+    
+    //show progress
+    call show_progress(sScreen_ppShelf,l_nNum_f1_idx+1,l_nNum_f1_lim,6)
+    //increase
+    l_nNum_f1_idx = l_nNum_f1_idx +1
 
     //runout remider
-    if l_nNum_f2_idx > l_nNum_f2_lim
+    if l_nNum_f2_idx >= l_nNum_f2_lim
       //warning if runs out
       call show_check("Reload F2")
       //reset
@@ -58,8 +62,13 @@
     //f2 place
     call f2_place(mNomSpeed,mSlowSpeed)
 
+    //show progress
+    call show_progress(sScreen_ppShelf,l_nNum_f2_idx+1,l_nNum_f2_lim,7)
+    //increase
+    l_nNum_f2_idx = l_nNum_f2_idx +1
+
     //runout reminder
-    if l_nNum_f3_idx > l_nNum_f3_lim
+    if l_nNum_f3_idx >= l_nNum_f3_lim
       //warning if runs out
       call show_check("Reload F3")
       //reset
@@ -71,6 +80,11 @@
     call regular_pick(t3,mNomSpeed,l_pPoint_cur,dDio_t3_vs,false)
     //f3place
     call regular_place(t3,mNomSpeed,f3place,true)
+    
+    //show progress
+    call show_progress(sScreen_ppShelf,l_nNum_f3_idx+1,l_nNum_f3_lim,8)
+    //increase
+    l_nNum_f3_idx = l_nNum_f3_idx +1
     
   endWhile
   

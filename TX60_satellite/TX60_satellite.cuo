@@ -13,6 +13,9 @@
     <Nodes>
       <Node Path="TX60_satellite" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\show_menu\Parameters" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\show_progress\Parameters" IsExpanded="true" />
     </Nodes>
   </Option>
   <Option Name="GeometryView">
@@ -25,10 +28,7 @@
     </Nodes>
   </Option>
   <Option Name="Breakpoints">
-    <Breakpoints>
-      <Breakpoint Controller="Controller1" Application="Disk://HRAS_trial/HRAS_trial.pjx" ProgramName="f2_place" Line="19" />
-      <Breakpoint Controller="Controller1" Application="Disk://HRAS_trial/HRAS_trial.pjx" ProgramName="pick_cells" Line="30" />
-    </Breakpoints>
+    <Breakpoints />
   </Option>
   <Option Name="IOsControlPanel">
     <Ios />
@@ -39,7 +39,7 @@
     </Watches>
   </Option>
   <Option Name="3DView">
-    <_3DView Visible="false" />
+    <_3DView Visible="true" />
   </Option>
   <Option Name="SynchronizerMode">
     <Synchronizers>
