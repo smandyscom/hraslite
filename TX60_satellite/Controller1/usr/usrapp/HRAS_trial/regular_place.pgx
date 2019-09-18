@@ -7,6 +7,7 @@
       <Parameter name="x_pPoint_place" type="point" xsi:type="element" />
       <Parameter name="x_bBool_press" type="bool" xsi:type="element" />
       <Parameter name="x_dDio_cy" type="dio" xsi:type="element" />
+      <Parameter name="x_bBool_bk" type="bool" xsi:type="element" />
     </Parameters>
     <Locals>
       <Local name="l_pPoint_drop" type="point" xsi:type="array" size="1" />
@@ -54,6 +55,9 @@
     movej(l_pPoint_press,x_tTool,x_mMdesc)
     waitEndMove()
   endIf
+  
+  //additional vacuum (back secure) if any
+  
   
   //to safe
   movej(l_pPoint_safe,x_tTool,x_mMdesc)

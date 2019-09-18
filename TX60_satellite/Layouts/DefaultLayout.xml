@@ -15,7 +15,7 @@
 						<UIElement xsi:type="Workspace" AutoHideSize="1198,395" DockedSize="1198,395" DocumentSize="1033.79450547781,640.331540840531" FloatingSize="1198,395" Size="1033.79450547781,640.331540840531">
 							<Content xsi:type="TabbedMdiHost">
 								<Content xsi:type="SplitContainer" AutoHideSize="1033.79450547781,640.331540840531" DockedSize="1033.79450547781,640.331540840531" DocumentSize="1033.79450547781,640.331540840531" FloatingSize="1033.79450547781,640.331540840531" Size="1033.79450547781,640.331540840531" Orientation="Horizontal">
-									<UIElement xsi:type="TabbedMdiContainer" AutoHideSize="1033.79450547781,640.331540840531" DockedSize="1033.79450547781,640.331540840531" DocumentSize="1033.79450547781,640.331540840531" FloatingSize="1033.79450547781,640.331540840531" Size="1033.79450547781,640.331540840531" SelectedWindowUniqueId="c26902dc-31a9-45f5-a83c-411c13ac0a2b" />
+									<UIElement xsi:type="TabbedMdiContainer" AutoHideSize="1033.79450547781,640.331540840531" DockedSize="1033.79450547781,640.331540840531" DocumentSize="1033.79450547781,640.331540840531" FloatingSize="1033.79450547781,640.331540840531" Size="1033.79450547781,640.331540840531" SelectedWindowUniqueId="3377fa43-c08c-4cb2-b546-dc39a82f4886" />
 								</Content>
 							</Content>
 						</UIElement>

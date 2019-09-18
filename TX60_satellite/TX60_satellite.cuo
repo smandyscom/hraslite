@@ -7,6 +7,9 @@
     <Nodes>
       <Node Path="TX60_satellite" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\dio" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\pointRx" IsExpanded="true" />
     </Nodes>
   </Option>
   <Option Name="CellExplorer">
@@ -14,6 +17,8 @@
       <Node Path="TX60_satellite" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\regular_place" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\regular_place\Parameters" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\show_menu\Parameters" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\show_progress\Parameters" IsExpanded="true" />
     </Nodes>

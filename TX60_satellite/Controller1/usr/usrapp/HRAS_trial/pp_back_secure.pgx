@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="pp_back_secure">
+    <Code><![CDATA[begin
+  //given f2,f3 are in hand
+  //exit state : f2, f3 secured in one hand
+  
+  //place f2 in origin of bk (//open bk vacuum
+  call regular_place()
+  
+  //drop f3 offset from f2 origin
+    
+  //shut back secure
+  
+  //drive f3 to safe height
+  
+end]]></Code>
+  </Program>
+</Programs>

@@ -17,6 +17,7 @@
     <Program file="show_progress.pgx" />
     <Program file="start.pgx" />
     <Program file="stop.pgx" />
+	<Program file="pp_back_secure.pgx" />
   </Programs>
   <Database>
     <Data file="HRAS_trial.dtx" />
