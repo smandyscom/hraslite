@@ -12,6 +12,7 @@
       <Local name="l_pPoint_lb_cur" type="point" xsi:type="array" size="1" />
       <Local name="l_nNum_total" type="num" xsi:type="array" size="1" />
       <Local name="l_nNum_current" type="num" xsi:type="array" size="1" />
+      <Local name="l_dDio_cur_cy" type="dio" xsi:type="array" size="1" />
     </Locals>
     <Code><![CDATA[begin
   //pick from f1 put to bin
@@ -21,14 +22,20 @@
     case 1
       //f1
       l_tTool_cur = t1
+      dioLink(l_dDio_cur_cy,dDio_t1_cy)
+      //dio assignment
     break
     case 2
       //f2
       l_tTool_cur = t1
+       dioLink(l_dDio_cur_cy,dDio_t2_cy)
+      //dio assignment
     break
     case 3
       //f3
       l_tTool_cur = t3
+       dioLink(l_dDio_cur_cy,dDio_t3_cy)
+      //dio assignment
     break
     
   endSwitch
@@ -46,10 +53,10 @@
     //pick position count
     call calculate_pick(l_nNum_cRow,l_nNum_cCol,l_pPoint_cur,x_nNum_choose)
     //pick (not defined yet
-    call regular_pick(l_tTool_cur,mNomSpeed,l_pPoint_cur,dDio_t1_vs,false)
+    call regular_pick(l_tTool_cur,mNomSpeed,l_pPoint_cur,dDio_t1_vs,false,l_dDio_cur_cy)
       
     //bin place (bin not defined yet
-    call regular_place(l_tTool_cur,mNomSpeed,ref,false)
+    call regular_place(l_tTool_cur,mNomSpeed,ref,false,l_dDio_cur_cy)
   
   endFor
   

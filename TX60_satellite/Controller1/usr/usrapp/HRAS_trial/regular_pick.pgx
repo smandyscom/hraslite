@@ -7,6 +7,7 @@
       <Parameter name="x_pPoint_pick" type="point" xsi:type="element" />
       <Parameter name="x_dDio_vs" type="dio" xsi:type="element" />
       <Parameter name="x_bBool_check" type="bool" xsi:type="element" />
+      <Parameter name="x_dDio_cy" type="dio" xsi:type="element" />
     </Parameters>
     <Locals>
       <Local name="l_pPoint_pick" type="point" xsi:type="array" size="1" />
@@ -22,15 +23,28 @@
 
   l_pPoint_pick=x_pPoint_pick
 
-  ////to place via safe
+  ////to place via safe (in sequence)
   movej(l_pPoint_safe,x_tTool,x_mMdesc)
-  //waitEndMove()
+  waitEndMove()
+  
+  //corresponding cylinder extend
+  if ioStatus(x_dDio_cy) >= 0
+    //once io is working , on
+    x_dDio_cy = true
+  endIf  
+  
   movej(l_pPoint_pick,x_tTool,x_mMdesc)
   waitEndMove()
   //vg on
   if ioStatus(x_tTool.gripper) >= 0
-     //once io is working
+    //once io is working
     open(x_tTool)
+  endIf
+  
+  //corresponding cylinder extract
+  if ioStatus(x_dDio_cy) >= 0
+    //once io is working , off
+    x_dDio_cy = false
   endIf
 
   //to safe

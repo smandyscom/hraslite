@@ -37,9 +37,9 @@
     call calculate_rc(l_nNum_f1_idx,1,l_nNum_cRow,l_nNum_cCol)
     call calculate_pick(l_nNum_cRow,l_nNum_cCol,l_pPoint_cur,1)
     //f1 cell pick 
-    call regular_pick(t1,mNomSpeed,l_pPoint_cur,dDio_t1_vs,false)  
+    call regular_pick(t1,mNomSpeed,l_pPoint_cur,dDio_t1_vs,false,dDio_t1_cy)  
     //f1 place
-    call regular_place(t1,mNomSpeed,f1place,false)
+    call regular_place(t1,mNomSpeed,f1place,false,dDio_t1_cy)
     
     //show progress
     call show_progress(sScreen_ppShelf,l_nNum_f1_idx+1,l_nNum_f1_lim,6)
@@ -56,7 +56,7 @@
     call calculate_rc(l_nNum_f2_idx,2,l_nNum_cRow,l_nNum_cCol)
     call calculate_pick(l_nNum_cRow,l_nNum_cCol,l_pPoint_cur,2)
     //f2 cell pick 
-    call regular_pick(t1,mNomSpeed,l_pPoint_cur,dDio_t1_vs,false)
+    call regular_pick(t1,mNomSpeed,l_pPoint_cur,dDio_t1_vs,false,dDio_t2_cy)
     //fixture reminder
     call show_check("Place fixture")
     //f2 place
@@ -77,9 +77,9 @@
     call calculate_rc(l_nNum_f3_idx,3,l_nNum_cRow,l_nNum_cCol)
     call calculate_pick(l_nNum_cRow,l_nNum_cCol,l_pPoint_cur,3)
     //f3pick
-    call regular_pick(t3,mNomSpeed,l_pPoint_cur,dDio_t3_vs,false)
+    call regular_pick(t3,mNomSpeed,l_pPoint_cur,dDio_t3_vs,false,dDio_t3_cy)
     //f3place
-    call regular_place(t3,mNomSpeed,f3place,true)
+    call regular_place(t3,mNomSpeed,f3place,true,dDio_t3_cy)
     
     //show progress
     call show_progress(sScreen_ppShelf,l_nNum_f3_idx+1,l_nNum_f3_lim,8)

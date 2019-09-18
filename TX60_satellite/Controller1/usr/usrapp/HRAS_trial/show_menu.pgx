@@ -18,7 +18,7 @@
   gotoxy(x_sScreen,0,2)
   putln(x_sScreen,"F3)Filter 3 pick/bin")
   gotoxy(x_sScreen,0,3)
-  putln(x_sScreen,"F4)Shelf pick/fixture")
+  putln(x_sScreen,"F4)Shelf pick/fixture (depreciated)")
   gotoxy(x_sScreen,0,4)
   putln(x_sScreen,"F5)Assemble")
   
