@@ -24,6 +24,11 @@
       x_nNum_lCol = 2
       x_nNum_lRow = 5
     break
+    case 4
+      //bottom
+      x_nNum_lCol = 2
+      x_nNum_lRow = 5
+    break
     
   endSwitch
   
