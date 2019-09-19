@@ -1,6 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
   <Program name="pp_auto_v1">
+    <Locals>
+      <Local name="l_nNum_bt_lim" type="num" xsi:type="array" size="1" />
+      <Local name="l_nNum_bt_idx" type="num" xsi:type="array" size="1" />
+      <Local name="l_nNum_f3_idx" type="num" xsi:type="array" size="1" />
+      <Local name="l_nNum_f2_idx" type="num" xsi:type="array" size="1" />
+      <Local name="l_nNum_f1_idx" type="num" xsi:type="array" size="1" />
+      <Local name="l_nNum_f3_lim" type="num" xsi:type="array" size="1" />
+      <Local name="l_nNum_f2_lim" type="num" xsi:type="array" size="1" />
+      <Local name="l_nNum_f1_lim" type="num" xsi:type="array" size="1" />
+      <Local name="l_nNum_cRow" type="num" xsi:type="array" size="1" />
+      <Local name="l_nNum_cCol" type="num" xsi:type="array" size="1" />
+      <Local name="l_pPoint_cur" type="point" xsi:type="array" size="1" />
+    </Locals>
     <Code><![CDATA[begin
   //-----------------------------------------
   //  Cells to manual fixture
@@ -66,7 +79,7 @@
     call calculate_rc(l_nNum_f1_idx,1,l_nNum_cRow,l_nNum_cCol)
     call calculate_pick(l_nNum_cRow,l_nNum_cCol,l_pPoint_cur,1)
     
-    call regular_pick(t1,mNomSpeed,l_pPoint_cur,dDio_t1_vs,false,dDio_t1_cy)  
+    call regular_pick(t1,mNomSpeed,l_pPoint_cur,dDio_t1_cy,false)  
     
     
     //show progress
@@ -90,7 +103,7 @@
     
     call calculate_rc(l_nNum_f2_idx,2,l_nNum_cRow,l_nNum_cCol)
     call calculate_pick(l_nNum_cRow,l_nNum_cCol,l_pPoint_cur,2)
-    call regular_pick(t2,mNomSpeed,l_pPoint_cur,dDio_t1_vs,false,dDio_t2_cy)
+    call regular_pick(t2,mNomSpeed,l_pPoint_cur,dDio_t2_cy,false)
     //fixture reminder
     call show_check("Place fixture")
     //f2 place
@@ -115,7 +128,7 @@
     call calculate_rc(l_nNum_f3_idx,3,l_nNum_cRow,l_nNum_cCol)
     call calculate_pick(l_nNum_cRow,l_nNum_cCol,l_pPoint_cur,3)
     
-    call regular_pick(t3,mNomSpeed,l_pPoint_cur,dDio_t3_vs,false,dDio_t3_cy)
+    call regular_pick(t3,mNomSpeed,l_pPoint_cur,dDio_t3_cy,false)
     
     
     //show progress

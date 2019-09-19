@@ -21,6 +21,14 @@
   putln(x_sScreen,"F4)Shelf pick/fixture (depreciated)")
   gotoxy(x_sScreen,0,4)
   putln(x_sScreen,"F5)Assemble")
+  //---------------
+  //  HRAS Lite
+  //---------------
+  gotoxy(x_sScreen,0,5)
+  putln(x_sScreen,"F6)Cell to back secure")
+  gotoxy(x_sScreen,0,6)
+  putln(x_sScreen,"F7)Auto ver1")
+  
   
   //anykey
   x_nNum_choosed = get(x_sScreen)

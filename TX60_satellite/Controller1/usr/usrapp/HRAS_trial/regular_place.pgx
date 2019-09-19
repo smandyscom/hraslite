@@ -34,6 +34,7 @@
   if ioStatus(x_dDio_cy) >= 0
     //once io is working , on
     x_dDio_cy = true
+    delay(nNum_cy_delay)
   endIf 
   
   movej(l_pPoint_drop,x_tTool,x_mMdesc)

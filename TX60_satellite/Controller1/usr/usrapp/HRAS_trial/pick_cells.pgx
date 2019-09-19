@@ -53,7 +53,7 @@
     //pick position count
     call calculate_pick(l_nNum_cRow,l_nNum_cCol,l_pPoint_cur,x_nNum_choose)
     //pick (not defined yet
-    call regular_pick(l_tTool_cur,mNomSpeed,l_pPoint_cur,dDio_t1_vs,false,l_dDio_cur_cy)
+    call regular_pick(l_tTool_cur,mNomSpeed,l_pPoint_cur,l_dDio_cur_cy,false)
       
     //bin place (bin not defined yet
     call regular_place(l_tTool_cur,mNomSpeed,ref,false,l_dDio_cur_cy,false)

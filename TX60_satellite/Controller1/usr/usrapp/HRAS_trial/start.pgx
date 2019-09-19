@@ -31,6 +31,14 @@
         //F5
         call pp_cells()
       break
+      case 276
+        //F6
+        call pp_cell_bk()
+      break
+      case 277
+        //F7
+        call pp_auto_v1()
+      break
       default
         return
       break

@@ -30,6 +30,7 @@
   if ioStatus(x_dDio_cy) >= 0
     //once io is working , on
     x_dDio_cy = true
+    delay(nNum_cy_delay)
   endIf  
   
   movej(l_pPoint_pick,x_tTool,x_mMdesc)
@@ -41,7 +42,7 @@
   endIf
   
   //activate/deactive back secure if any
-  if ioStatus(dDio_bk) >= 0 and 
+  if ioStatus(dDio_bk) >= 0  
     //once dDio_bk is working
     dDio_bk = x_bBool_bk
   endIf
