@@ -84,13 +84,13 @@
       <Value key="0" rx="-180" rz="-180" fatherId="fixture[0]" />
     </Data>
     <Data name="pPointRx_f1_lb" access="private" xsi:type="array" type="pointRx" size="1">
-      <Value key="0" x="8.1" y="23.5" z="1.8" rx="180" fatherId="f1[0]" />
+      <Value key="0" x="8.681673" y="24.27554" z="20" rx="-179.9997" ry="-7.2E-05" rz="0.000325" fatherId="f1[0]" />
     </Data>
     <Data name="pPointRx_f2_lb" access="private" xsi:type="array" type="pointRx" size="1">
-      <Value key="0" x="-3.5" y="25" z="0.2" rx="180" fatherId="f2[0]" />
+      <Value key="0" x="-3.9" y="25.359294" z="20" rx="-179.99996" ry="-0.00017" rz="2.9E-05" fatherId="f2[0]" />
     </Data>
     <Data name="pPointRx_f3_lb" access="private" xsi:type="array" type="pointRx" size="1">
-      <Value key="0" x="28.5" y="3.34" z="0.2" rx="-180" rz="-180" fatherId="f3[0]" />
+      <Value key="0" x="28.5" y="3.34" z="13.9" rx="-180" rz="90" fatherId="f3[0]" />
     </Data>
     <Data name="ref" access="private" xsi:type="array" type="pointRx" size="1">
       <Value key="0" x="-188.838954" y="475.816737" z="-162.486188" rx="180" rz="180" fatherId="world[0]" />
@@ -98,33 +98,51 @@
     <Data name="sScreen_menu" access="private" xsi:type="array" type="screen" size="1" />
     <Data name="sScreen_ppShelf" access="private" xsi:type="array" type="screen" size="1" />
     <Data name="ca" access="private" xsi:type="array" type="tool" size="1">
-      <Value key="0" z="55" rz="45" fatherId="flange[0]" ioLink="valve1" />
+      <Value key="0" z="125" fatherId="flange[0]" ioLink="valve1" />
     </Data>
     <Data name="t1" access="private" xsi:type="array" type="tool" size="1">
-      <Value key="0" y="-18.5" fatherId="ca[0]" ioLink="BasicIO-1\%Q0" ioOpen="1" ioClose="0.5" />
+      <Value key="0" y="47" fatherId="ca[0]" ioLink="BasicIO-1\%Q0" ioOpen="1" ioClose="0.5" />
     </Data>
     <Data name="t2" access="private" xsi:type="array" type="tool" size="1">
-      <Value key="0" y="-4.5" fatherId="ca[0]" ioLink="valve1" />
+      <Value key="0" y="-47" fatherId="ca[0]" ioLink="valve1" />
     </Data>
     <Data name="t3" access="private" xsi:type="array" type="tool" size="1">
-      <Value key="0" y="17.5" fatherId="ca[0]" ioLink="BasicIO-1\%Q2" ioOpen="0.5" ioClose="0.5" />
+      <Value key="0" x="47" fatherId="ca[0]" ioLink="BasicIO-1\%Q2" ioOpen="0.5" ioClose="0.5" />
     </Data>
     <Data name="dDio_t1_cy" access="private" xsi:type="array" type="dio" size="1" />
     <Data name="dDio_t2_cy" access="private" xsi:type="array" type="dio" size="1" />
     <Data name="dDio_t3_cy" access="private" xsi:type="array" type="dio" size="1" />
-    <Data name="dDio_bk_secure" access="private" xsi:type="array" type="dio" size="1" />
+    <Data name="fFrame_plate_2" access="private" xsi:type="array" type="frame" size="1">
+      <Value key="0" fatherId="world[0]" />
+    </Data>
+    <Data name="back_secure" access="private" xsi:type="array" type="frame" size="1">
+      <Value key="0" fatherId="fFrame_plate_2[0]" />
+    </Data>
+    <Data name="pPointRx_bt_lb" access="private" xsi:type="array" type="pointRx" size="1">
+      <Value key="0" fatherId="fFrame_plate_2[0]" />
+    </Data>
+    <Data name="pPointRx_f2_bk" access="private" xsi:type="array" type="pointRx" size="1">
+      <Value key="0" fatherId="back_secure[0]" />
+    </Data>
+    <Data name="pPointRx_f3_bk" access="private" xsi:type="array" type="pointRx" size="1">
+      <Value key="0" y="0.2" fatherId="back_secure[0]" />
+    </Data>
+    <Data name="pPointRx_f1_pos" access="private" xsi:type="array" type="pointRx" size="1">
+      <Value key="0" fatherId="fFrame_plate_2[0]" />
+    </Data>
+    <Data name="pPointRx_f3_pos" access="private" xsi:type="array" type="pointRx" size="1">
+      <Value key="0" fatherId="fFrame_plate_2[0]" />
+    </Data>
+    <Data name="dDio_bk" access="private" xsi:type="array" type="dio" size="1" />
+    <Data name="dDio_f1_fit" access="private" xsi:type="array" type="dio" size="1" />
     <Data name="dDio_f1_secure" access="private" xsi:type="array" type="dio" size="1" />
     <Data name="dDio_f2_secure" access="private" xsi:type="array" type="dio" size="1" />
     <Data name="dDio_f3_secure" access="private" xsi:type="array" type="dio" size="1" />
-    <Data name="dDio_fix_cy" access="private" xsi:type="array" type="dio" size="1" />
-    <Data name="back_secure" access="private" xsi:type="array" type="frame" size="1">
-      <Value key="0" fatherId="world[0]" />
+    <Data name="pPointRx_bt_pos" access="private" xsi:type="array" type="pointRx" size="1">
+      <Value key="0" fatherId="fFrame_plate_2[0]" />
     </Data>
-    <Data name="pPointRx_bk_f2" access="private" xsi:type="array" type="pointRx" size="1">
-      <Value key="0" fatherId="world[0]" />
-    </Data>
-    <Data name="pPointRx_bk_f3" access="private" xsi:type="array" type="pointRx" size="1">
-      <Value key="0" y="0.2" fatherId="world[0]" />
+    <Data name="nNum_cy_delay" access="private" xsi:type="array" type="num" size="1">
+      <Value key="0" value="0.5" />
     </Data>
   </Datas>
 </Database>

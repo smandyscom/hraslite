@@ -6,14 +6,11 @@
   //exit state : f2, f3 secured in one hand
   
   //place f2 in origin of bk (//open bk vacuum
-  call regular_place()
+  call regular_place(t2,mNomSpeed,pPointRx_f2_bk,false,dDio_t2_cy,true)
   
   //drop f3 offset from f2 origin
-    
-  //shut back secure
-  
-  //drive f3 to safe height
-  
+  call regular_pick(t3,mNomSpeed,pPointRx_f3_bk,dDio_t3_cy,false)
+   
 end]]></Code>
   </Program>
 </Programs>

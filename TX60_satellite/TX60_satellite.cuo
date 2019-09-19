@@ -8,8 +8,8 @@
       <Node Path="TX60_satellite" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\dio" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\pointRx" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\tool" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\tool\ca" IsExpanded="true" />
     </Nodes>
   </Option>
   <Option Name="CellExplorer">

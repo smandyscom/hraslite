@@ -7,6 +7,9 @@
     <Program file="calculate_total.pgx" />
     <Program file="f2_place.pgx" />
     <Program file="pick_cells.pgx" />
+    <Program file="pp_auto_v1.pgx" />
+    <Program file="pp_back_secure.pgx" />
+    <Program file="pp_cell_bk.pgx" />
     <Program file="pp_cells.pgx" />
     <Program file="pp_shelf.pgx" />
     <Program file="regular_pick.pgx" />
@@ -17,7 +20,6 @@
     <Program file="show_progress.pgx" />
     <Program file="start.pgx" />
     <Program file="stop.pgx" />
-	<Program file="pp_back_secure.pgx" />
   </Programs>
   <Database>
     <Data file="HRAS_trial.dtx" />

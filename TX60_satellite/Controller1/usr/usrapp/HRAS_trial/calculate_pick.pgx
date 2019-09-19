@@ -40,6 +40,13 @@
       
       l_pPoint_lb = pPointRx_f3_lb
     break
+    case 4
+      //bottom 
+      l_nNum_pitchX = 32
+      l_nNum_pitchY = 33
+      
+      l_pPoint_lb = pPointRx_bt_lb
+    break
     
   endSwitch
  

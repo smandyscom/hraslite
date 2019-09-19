@@ -56,8 +56,11 @@
     waitEndMove()
   endIf
   
-  //additional vacuum (back secure) if any
-  
+  //additional back secure
+   if ioStatus(dDio_bk) >= 0
+    //once io is working and require back secure, on    
+    dDio_bk = x_bBool_bk
+  endIf 
   
   //to safe
   movej(l_pPoint_safe,x_tTool,x_mMdesc)
