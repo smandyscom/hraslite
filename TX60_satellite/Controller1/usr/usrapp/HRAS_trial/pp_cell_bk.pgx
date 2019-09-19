@@ -74,7 +74,7 @@
     //-------------
     // drop 
     //-------------
-    call regular_place(t3,mNomSpeed,pPointRx_f3_bk,false,dDio_t1_cy,false)
+    call regular_place(t3,mNomSpeed,pPointRx_f3_bk,false,dDio_t3_cy,false)
     
     
   endWhile

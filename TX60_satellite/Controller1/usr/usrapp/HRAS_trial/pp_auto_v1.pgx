@@ -48,10 +48,7 @@
     
     call calculate_rc(l_nNum_bt_idx,4,l_nNum_cRow,l_nNum_cCol)
     call calculate_pick(l_nNum_cRow,l_nNum_cCol,l_pPoint_cur,4)
-    
     call regular_pick(t3,mNomSpeed,l_pPoint_cur,dDio_t3_cy,false)  
-    //f1 place
-    call regular_place(t3,mNomSpeed,f1place,false,dDio_t3_cy,false)
     
     //show progress
     call show_progress(sScreen_ppShelf,l_nNum_bt_idx+1,l_nNum_bt_lim,5)
@@ -75,18 +72,14 @@
       l_nNum_f1_idx = 0
     endIf
     
-    
     call calculate_rc(l_nNum_f1_idx,1,l_nNum_cRow,l_nNum_cCol)
-    call calculate_pick(l_nNum_cRow,l_nNum_cCol,l_pPoint_cur,1)
-    
+    call calculate_pick(l_nNum_cRow,l_nNum_cCol,l_pPoint_cur,1)   
     call regular_pick(t1,mNomSpeed,l_pPoint_cur,dDio_t1_cy,false)  
-    
     
     //show progress
     call show_progress(sScreen_ppShelf,l_nNum_f1_idx+1,l_nNum_f1_lim,6)
     //increase
     l_nNum_f1_idx = l_nNum_f1_idx +1
-
     
     //----------
     //f2 cell pick
@@ -104,11 +97,6 @@
     call calculate_rc(l_nNum_f2_idx,2,l_nNum_cRow,l_nNum_cCol)
     call calculate_pick(l_nNum_cRow,l_nNum_cCol,l_pPoint_cur,2)
     call regular_pick(t2,mNomSpeed,l_pPoint_cur,dDio_t2_cy,false)
-    //fixture reminder
-    call show_check("Place fixture")
-    //f2 place
-    call f2_place(mNomSpeed,mSlowSpeed)
-
     //show progress
     call show_progress(sScreen_ppShelf,l_nNum_f2_idx+1,l_nNum_f2_lim,7)
     //increase
@@ -127,10 +115,8 @@
     endIf
     call calculate_rc(l_nNum_f3_idx,3,l_nNum_cRow,l_nNum_cCol)
     call calculate_pick(l_nNum_cRow,l_nNum_cCol,l_pPoint_cur,3)
-    
     call regular_pick(t3,mNomSpeed,l_pPoint_cur,dDio_t3_cy,false)
-    
-    
+        
     //show progress
     call show_progress(sScreen_ppShelf,l_nNum_f3_idx+1,l_nNum_f3_lim,8)
     //increase
@@ -144,14 +130,18 @@
     //----------------
     // F1, F2+F3 place
     //----------------
-    call regular_place(t1,mNomSpeed,f1place,false,dDio_t1_cy,false)
+    call regular_place(t1,mNomSpeed,pPointRx_f1_pos,false,dDio_t1_cy,false)
     // put  f1 fit
-    dDio_f1_fit = true
-    delay(nNum_cy_delay)
+    if ioStatus(dDio_f1_fit) >= 0    
+      dDio_f1_fit = true
+      delay(nNum_cy_delay)
+    endIf
     //f3place
-    call regular_place(t3,mNomSpeed,f3place,true,dDio_t3_cy,false)
+    call regular_place(t3,mNomSpeed,pPointRx_f3_pos,true,dDio_t3_cy,false)
     // off  f1 fit
-    dDio_f1_fit = false
+    if ioStatus(dDio_f1_fit) >= 0    
+      dDio_f1_fit = false
+    endIf
     
   endWhile
   
