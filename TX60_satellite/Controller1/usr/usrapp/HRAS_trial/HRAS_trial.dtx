@@ -22,7 +22,7 @@
       <Value key="0" link="fIn0" />
     </Data>
     <Data name="back_secure" access="private" xsi:type="array" type="frame" size="1">
-      <Value key="0" x="115.58673" y="51.100364" z="19.203769" fatherId="fFrame_plate_2[0]" />
+      <Value key="0" x="115.58673" y="51.100364" z="20" fatherId="fFrame_plate_2[0]" />
     </Data>
     <Data name="f1" access="private" xsi:type="array" type="frame" size="1">
       <Value key="0" x="-139.3" y="417.51507" z="-171.375326" rz="179.999983" fatherId="world[0]" />
@@ -33,11 +33,17 @@
     <Data name="f3" access="private" xsi:type="array" type="frame" size="1">
       <Value key="0" x="-105.214041" y="542.677355" z="-169.567493" rz="-89.997724" fatherId="world[0]" />
     </Data>
+    <Data name="fFrame_fixture" access="private" xsi:type="array" type="frame" size="1">
+      <Value key="0" x="215" y="110.7" z="20.45" fatherId="fFrame_plate_2[0]" />
+    </Data>
     <Data name="fFrame_plate_2" access="private" xsi:type="array" type="frame" size="1">
-      <Value key="0" x="256.021829" y="565.589091" z="-184.692699" rz="-126.61208" fatherId="world[0]" />
+      <Value key="0" x="256.021829" y="565.589091" z="-185" rx="-180" rz="-126.61208" fatherId="world[0]" />
     </Data>
     <Data name="fixture" access="private" xsi:type="array" type="frame" size="1">
       <Value key="0" x="-479.290297" y="224.508367" z="-148" rz="-90.00005" fatherId="world[0]" />
+    </Data>
+    <Data name="frame_bk" access="private" xsi:type="array" type="frame" size="1">
+      <Value key="0" x="19" y="9" fatherId="back_secure[0]" />
     </Data>
     <Data name="shelf" access="private" xsi:type="array" type="frame" size="1">
       <Value key="0" x="-472.219676" y="345.637635" z="-165" rz="-90" fatherId="world[0]" />
@@ -101,7 +107,7 @@
       <Value key="0" rx="-180" rz="-180" fatherId="fixture[0]" />
     </Data>
     <Data name="pPointRx_bt_lb" access="private" xsi:type="array" type="pointRx" size="1">
-      <Value key="0" x="20" y="51" z="5.05" rx="-180" rz="90" fatherId="fFrame_plate_2[0]" />
+      <Value key="0" x="20" y="51" z="5.05" rz="90" fatherId="fFrame_plate_2[0]" />
     </Data>
     <Data name="pPointRx_bt_pos" access="private" xsi:type="array" type="pointRx" size="1">
       <Value key="0" fatherId="fFrame_fixture[0]" />
@@ -113,13 +119,13 @@
       <Value key="0" y="-1" fatherId="fFrame_fixture[0]" />
     </Data>
     <Data name="pPointRx_f2_bk" access="private" xsi:type="array" type="pointRx" size="1">
-      <Value key="0" x="19" y="9" rx="-180" fatherId="back_secure[0]" />
+      <Value key="0" fatherId="frame_bk[0]" />
     </Data>
     <Data name="pPointRx_f2_lb" access="private" xsi:type="array" type="pointRx" size="1">
       <Value key="0" x="-3.9" y="25.359294" z="20" rx="-179.99996" ry="-0.00017" rz="2.9E-05" fatherId="f2[0]" />
     </Data>
     <Data name="pPointRx_f3_bk" access="private" xsi:type="array" type="pointRx" size="1">
-      <Value key="0" x="19" y="10" z="20" rx="-180" rz="90" fatherId="back_secure[0]" />
+      <Value key="0" y="1" rz="90" fatherId="frame_bk[0]" />
     </Data>
     <Data name="pPointRx_f3_lb" access="private" xsi:type="array" type="pointRx" size="1">
       <Value key="0" x="29.3" y="1.428033" z="20" rx="-179.999935" ry="0.000404" rz="89.999945" fatherId="f3[0]" />
@@ -143,9 +149,6 @@
     </Data>
     <Data name="t3" access="private" xsi:type="array" type="tool" size="1">
       <Value key="0" x="47" fatherId="ca[0]" ioLink="BasicIO-1\%Q2" ioOpen="0.5" ioClose="0.5" />
-    </Data>
-    <Data name="fFrame_fixture" access="private" xsi:type="array" type="frame" size="1">
-      <Value key="0" x="215" y="110.7" z="20.45" rx="-180" fatherId="fFrame_plate_2[0]" />
     </Data>
   </Datas>
 </Database>
