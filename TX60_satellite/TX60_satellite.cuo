@@ -8,6 +8,9 @@
       <Node Path="TX60_satellite" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\frame" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\frame\back_secure" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\frame\fFrame_plate_2" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\tool" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\tool\ca" IsExpanded="true" />
     </Nodes>
@@ -17,7 +20,8 @@
       <Node Path="TX60_satellite" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\regular_place" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\pp_auto_v1\Locals" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\pp_cells\Locals" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\regular_place\Parameters" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\show_menu\Parameters" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\show_progress\Parameters" IsExpanded="true" />
@@ -28,8 +32,14 @@
       <Node Path="TX60_satellite" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\f1\f1[0]" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\f1\f1[0]\pPointRx_f1_lb" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_plate_2" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_plate_2\fFrame_plate_2[0]" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_plate_2\fFrame_plate_2[0]\back_secure" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_plate_2\fFrame_plate_2[0]\back_secure\back_secure[0]" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_plate_2\fFrame_plate_2[0]\back_secure\back_secure[0]\pPointRx_f3_bk" IsExpanded="true" />
     </Nodes>
   </Option>
   <Option Name="Breakpoints">
