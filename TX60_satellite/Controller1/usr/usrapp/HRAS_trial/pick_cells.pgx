@@ -27,7 +27,7 @@
     break
     case 2
       //f2
-      l_tTool_cur = t1
+      l_tTool_cur = t2
        dioLink(l_dDio_cur_cy,dDio_t2_cy)
       //dio assignment
     break

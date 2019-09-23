@@ -7,6 +7,8 @@
     <Code><![CDATA[begin
   resetMotion()
 
+
+
   call show_menu(sScreen_ppShelf,l_nNum_choosen)
   
   while true

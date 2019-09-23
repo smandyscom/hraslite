@@ -1,7 +1,7 @@
 ﻿<DockSiteLayout xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SerializationFormat="ToolWindowsOnly">
 	<AutoHideHost>
 		<AutoHideTabStrip Side="Right">
-			<ToolWindowContainer AutoHideSize="173.042840104862,975" DockedSize="173.042840104862,975" DocumentSize="173.042840104862,975" FloatingSize="173.042840104862,975" Size="173.042840104862,975" SelectedWindowUniqueId="24337430-5890-4eac-9f74-a9dee6846ec6">
+			<ToolWindowContainer AutoHideSize="173.042840104862,975" DockedSize="173.042840104862,975" DocumentSize="173.042840104862,975" FloatingSize="173.042840104862,975" Size="173.042840104862,975" SelectedWindowUniqueId="462dc688-1e1f-429c-a12b-b18e65f99760">
 				<UIElement xsi:type="ToolWindowRef" UniqueId="24337430-5890-4eac-9f74-a9dee6846ec6" />
 				<UIElement xsi:type="ToolWindowRef" UniqueId="462dc688-1e1f-429c-a12b-b18e65f99760" />
 			</ToolWindowContainer>
@@ -15,7 +15,7 @@
 						<UIElement xsi:type="Workspace" AutoHideSize="1198,395" DockedSize="1198,395" DocumentSize="630.928084281731,292.331540840531" FloatingSize="1198,395" Size="630.928084281731,292.331540840531">
 							<Content xsi:type="TabbedMdiHost">
 								<Content xsi:type="SplitContainer" AutoHideSize="630.928084281731,292.331540840531" DockedSize="630.928084281731,292.331540840531" DocumentSize="630.928084281731,292.331540840531" FloatingSize="630.928084281731,292.331540840531" Size="630.928084281731,292.331540840531" Orientation="Horizontal">
-									<UIElement xsi:type="TabbedMdiContainer" AutoHideSize="630.928084281731,292.331540840531" DockedSize="630.928084281731,292.331540840531" DocumentSize="630.928084281731,292.331540840531" FloatingSize="630.928084281731,292.331540840531" Size="630.928084281731,292.331540840531" SelectedWindowUniqueId="a4142b19-59b6-4b22-8743-4517ab154f86" />
+									<UIElement xsi:type="TabbedMdiContainer" AutoHideSize="630.928084281731,292.331540840531" DockedSize="630.928084281731,292.331540840531" DocumentSize="630.928084281731,292.331540840531" FloatingSize="630.928084281731,292.331540840531" Size="630.928084281731,292.331540840531" SelectedWindowUniqueId="4d1c80a4-4f07-44db-8075-2a73f09402a2" />
 								</Content>
 							</Content>
 						</UIElement>
