@@ -7,7 +7,26 @@
     <Code><![CDATA[begin
   resetMotion()
 
-
+  //----------------------
+  //  Reset I/O
+  //----------------------
+  call check_out_set(t1.gripper,false)
+  call check_out_set(t2.gripper,false)
+  call check_out_set(t3.gripper,false)
+  
+  call check_out_set(dDio_f1_fit,false)
+  call check_out_set(dDio_bk,false)
+  
+  call check_out_set(dDio_f1_secure,false)
+  call check_out_set(dDio_f2_secure,false)
+  call check_out_set(dDio_f3_secure,false)
+  
+  call check_out_set(dDio_t1_cy,false)
+  call check_out_set(dDio_t2_cy,false)
+  call check_out_set(dDio_t3_cy,false)
+  //----------------------
+  //  Reset I/O
+  //----------------------
 
   call show_menu(sScreen_ppShelf,l_nNum_choosen)
   

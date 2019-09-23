@@ -5,6 +5,7 @@
     <Program file="calculate_pick.pgx" />
     <Program file="calculate_rc.pgx" />
     <Program file="calculate_total.pgx" />
+    <Program file="check_out_set.pgx" />
     <Program file="f2_place.pgx" />
     <Program file="pick_cells.pgx" />
     <Program file="pp_auto_v1.pgx" />
