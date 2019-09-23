@@ -8,6 +8,7 @@
       <Node Path="TX60_satellite" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\dio" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\frame" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\frame\back_secure" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\frame\fFrame_plate_2" IsExpanded="true" />
@@ -20,8 +21,11 @@
       <Node Path="TX60_satellite" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\pick_cells" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\pick_cells\Locals" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\pp_auto_v1\Locals" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\pp_cells\Locals" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\regular_pick\Locals" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\regular_place\Parameters" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\show_menu\Parameters" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\show_progress\Parameters" IsExpanded="true" />
