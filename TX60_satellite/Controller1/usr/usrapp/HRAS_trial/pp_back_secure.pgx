@@ -9,7 +9,7 @@
   call regular_place(t2,mNomSpeed,pPointRx_f2_bk,false,dDio_t2_cy,true)
   
   //drop f3 offset from f2 origin
-  call regular_pick(t3,mNomSpeed,pPointRx_f3_bk,dDio_t3_cy,false)
+  call regular_pick(t3,mNomSpeed,pPointRx_f3_bk,dDio_t3_cy,false,dDio_f3_secure)
    
 end]]></Code>
   </Program>

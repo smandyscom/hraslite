@@ -7,6 +7,7 @@
       <Parameter name="x_pPoint_pick" type="point" xsi:type="element" />
       <Parameter name="x_dDio_cy" type="dio" xsi:type="element" />
       <Parameter name="x_bBool_bk" type="bool" xsi:type="element" />
+      <Parameter name="x_dDio_secure" type="dio" xsi:type="element" />
     </Parameters>
     <Locals>
       <Local name="l_pPoint_pick" type="point" xsi:type="array" size="1" />
@@ -33,6 +34,11 @@
     delay(nNum_cy_delay)
   endIf  
   
+  //open secure (on the cell not on the back secure
+  if !x_bBool_bk
+    call check_out_set(x_dDio_secure,true)
+  endIf
+
   movej(l_pPoint_pick,x_tTool,x_mMdesc)
   waitEndMove()
   //vg on
@@ -56,14 +62,17 @@
   //to safe
   movej(l_pPoint_safe,x_tTool,x_mMdesc)
   waitEndMove()
+  
+  //shut secure
+  call check_out_set(x_dDio_secure,false)
 
   //check if vacuum established
   //if x_bBool_check and (dioGet(x_dDio_vs)==1)
-    //success
+  //success
   //elseIf x_bBool_check and (dioGet(x_dDio_vs)==1)
-    //failed
+  //failed
   //else
-    //irrelevant from IO check
+  //irrelevant from IO check
   //endIf
 
 end]]></Code>
