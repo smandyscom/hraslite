@@ -39,7 +39,10 @@
     call check_out_set(x_dDio_secure,true)
   endIf
 
-  movej(l_pPoint_pick,x_tTool,x_mMdesc)
+  //---------------------------------
+  // vertical should be linear mode
+  //---------------------------------
+  movel(l_pPoint_pick,x_tTool,x_mMdesc)
   waitEndMove()
   
   //vg on
@@ -55,10 +58,10 @@
   endIf
   
   //to safe
-  movej(l_pPoint_safe,x_tTool,x_mMdesc)
+  movel(l_pPoint_safe,x_tTool,x_mMdesc)
   waitEndMove()
   
-    //corresponding cylinder extract
+  //corresponding cylinder extract
   if ioStatus(x_dDio_cy) >= 0
     //once io is working , off
     x_dDio_cy = false

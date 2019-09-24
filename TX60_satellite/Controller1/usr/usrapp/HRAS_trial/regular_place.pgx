@@ -36,8 +36,10 @@
     x_dDio_cy = true
     delay(nNum_cy_delay)
   endIf 
-  
-  movej(l_pPoint_drop,x_tTool,x_mMdesc)
+  //---------------------------------
+  // vertical should be linear mode
+  //---------------------------------
+  movel(l_pPoint_drop,x_tTool,x_mMdesc)
   waitEndMove()
   //vg off
   if ioStatus(x_tTool.gripper) >= 0
@@ -47,7 +49,10 @@
   
   //additional press
   if x_bBool_press
-    movej(l_pPoint_press,x_tTool,x_mMdesc)
+    //---------------------------------
+    // vertical should be linear mode
+    //---------------------------------
+    movel(l_pPoint_press,x_tTool,x_mMdesc)
     waitEndMove()
   endIf
   
@@ -57,11 +62,14 @@
     dDio_bk = x_bBool_bk
   endIf 
   
+  //---------------------------------
+  // vertical should be linear mode
+  //---------------------------------
   //to safe
-  movej(l_pPoint_safe,x_tTool,x_mMdesc)
+  movel(l_pPoint_safe,x_tTool,x_mMdesc)
   waitEndMove()
   
-   //corresponding cylinder extract
+  //corresponding cylinder extract
   if ioStatus(x_dDio_cy) >= 0
     //once io is working , off
     x_dDio_cy = false
