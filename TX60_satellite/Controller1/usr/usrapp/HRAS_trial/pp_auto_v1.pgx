@@ -137,7 +137,7 @@
       delay(nNum_cy_delay)
     endIf
     //f3place
-    call regular_place(t3,mNomSpeed,pPointRx_f3_pos,true,dDio_t3_cy,false)
+    call regular_place(t3,mNomSpeed,pPointRx_f3_pos,false,dDio_t3_cy,false)
     // off  f1 fit
     if ioStatus(dDio_f1_fit) >= 0    
       dDio_f1_fit = false
