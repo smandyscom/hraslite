@@ -60,6 +60,10 @@
         //F7
         call pp_auto_v1()
       break
+      case 278
+        //F8
+        call pp_auto_v2()
+      break
       default
         return
       break

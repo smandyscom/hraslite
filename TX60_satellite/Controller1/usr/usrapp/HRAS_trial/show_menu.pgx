@@ -28,6 +28,8 @@
   putln(x_sScreen,"F6)Cell to back secure")
   gotoxy(x_sScreen,0,6)
   putln(x_sScreen,"F7)Auto ver1")
+  gotoxy(x_sScreen,0,7)
+  putln(x_sScreen,"F8)Auto ver2")
   
   
   //anykey

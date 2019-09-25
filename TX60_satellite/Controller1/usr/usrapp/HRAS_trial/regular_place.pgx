@@ -28,6 +28,7 @@
   //approach point preparation
   //----------------------------
   l_pPoint_aprch=x_pPoint_place
+  l_pPoint_aprch.trsf.z=l_pPoint_aprch.trsf.z+nNum_apporach_h
   //----------------------------
   //place point preparation
   //----------------------------

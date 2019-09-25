@@ -8,7 +8,7 @@
 						<UIElement xsi:type="Workspace" AutoHideSize="1198,395" DockedSize="1198,395" DocumentSize="1062.32042118838,583.858953020395" FloatingSize="1198,395" Size="1062.32042118838,583.858953020395">
 							<Content xsi:type="TabbedMdiHost">
 								<Content xsi:type="SplitContainer" AutoHideSize="1062.32042118838,583.858953020395" DockedSize="1062.32042118838,583.858953020395" DocumentSize="1062.32042118838,583.858953020395" FloatingSize="1062.32042118838,583.858953020395" Size="1062.32042118838,583.858953020395" Orientation="Horizontal">
-									<UIElement xsi:type="TabbedMdiContainer" AutoHideSize="1062.32042118838,583.858953020395" DockedSize="1062.32042118838,583.858953020395" DocumentSize="1062.32042118838,583.858953020395" FloatingSize="1062.32042118838,583.858953020395" Size="1062.32042118838,583.858953020395" SelectedWindowUniqueId="c52eea59-7a50-4bd8-8c9b-2e48a0b80ac4" />
+									<UIElement xsi:type="TabbedMdiContainer" AutoHideSize="1062.32042118838,583.858953020395" DockedSize="1062.32042118838,583.858953020395" DocumentSize="1062.32042118838,583.858953020395" FloatingSize="1062.32042118838,583.858953020395" Size="1062.32042118838,583.858953020395" SelectedWindowUniqueId="f80b94fc-7475-4c9f-9b01-7ff5ad1a4d79" />
 								</Content>
 							</Content>
 						</UIElement>
@@ -83,7 +83,7 @@
 					</UIElement>
 				</UIElement>
 				<UIElement xsi:type="SplitContainer" AutoHideSize="550,200" DockedSize="1062.32042118838,266.141046979605" DocumentSize="550,200" FloatingSize="550,200" Size="1062.32042118838,266.141046979605" Orientation="Horizontal">
-					<UIElement xsi:type="ToolWindowContainer" AutoHideSize="550,200" DockedSize="528.660210594191,266.141046979605" DocumentSize="550,200" FloatingSize="550,200" Size="528.660210594191,266.141046979605" SelectedWindowUniqueId="33bb7849-0192-4e2f-9544-51818b96f690">
+					<UIElement xsi:type="ToolWindowContainer" AutoHideSize="550,200" DockedSize="528.660210594191,266.141046979605" DocumentSize="550,200" FloatingSize="550,200" Size="528.660210594191,266.141046979605" SelectedWindowUniqueId="bb188f4c-a7b6-45e4-83dd-538b1f58db11">
 						<UIElement xsi:type="ToolWindowRef" UniqueId="bb188f4c-a7b6-45e4-83dd-538b1f58db11" />
 						<UIElement xsi:type="Track" UniqueId="e70de856-5d28-4edf-abb4-db78a37ac4b5" />
 						<UIElement xsi:type="ToolWindowRef" UniqueId="33bb7849-0192-4e2f-9544-51818b96f690" />
@@ -112,7 +112,7 @@
 				</UIElement>
 			</UIElement>
 			<UIElement xsi:type="SplitContainer" AutoHideSize="200,200" DockedSize="842.679578811617,855" DocumentSize="200,200" FloatingSize="200,200" Size="842.679578811617,855" Orientation="Vertical">
-				<UIElement xsi:type="ToolWindowContainer" AutoHideSize="200,200" DockedSize="842.679578811617,363.106136610006" DocumentSize="200,200" FloatingSize="200,200" Size="842.679578811617,363.106136610006" SelectedWindowUniqueId="3dee95ba-ff20-4757-9457-68b527aaa48d">
+				<UIElement xsi:type="ToolWindowContainer" AutoHideSize="200,200" DockedSize="842.679578811617,363.106136610006" DocumentSize="200,200" FloatingSize="200,200" Size="842.679578811617,363.106136610006" SelectedWindowUniqueId="1a5ef5f6-b295-4443-9b5d-5e50bcc004f8">
 					<UIElement xsi:type="ToolWindowRef" UniqueId="3dee95ba-ff20-4757-9457-68b527aaa48d" />
 					<UIElement xsi:type="ToolWindowRef" UniqueId="06d03f51-3499-4aaf-8fcf-f5474d1ce325" />
 					<UIElement xsi:type="ToolWindowRef" UniqueId="1a5ef5f6-b295-4443-9b5d-5e50bcc004f8" />

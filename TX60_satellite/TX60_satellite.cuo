@@ -8,9 +8,6 @@
       <Node Path="TX60_satellite" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\frame" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\mdesc" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\num" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\tool" IsExpanded="true" />
     </Nodes>
   </Option>
@@ -25,7 +22,6 @@
       <Node Path="TX60_satellite\Controller1\HRAS_trial\regular_pick" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\regular_pick\Parameters" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\regular_pick\Locals" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\regular_place" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\regular_place\Parameters" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\regular_place\Locals" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\show_menu\Parameters" IsExpanded="true" />
@@ -38,12 +34,17 @@
       <Node Path="TX60_satellite\Controller1" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\f3" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\f3\f3[0]" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\f3\f3[0]\pPointRx_f3_lb" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\back_secure" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\back_secure\back_secure[0]" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\back_secure\back_secure[0]\frame_bk" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\back_secure\back_secure[0]\frame_bk\frame_bk[0]" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\back_secure\back_secure[0]\frame_bk\frame_bk[0]\pPointRx_f1_bk" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\fFrame_fixture" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\fFrame_fixture\fFrame_fixture[0]" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\fFrame_fixture\fFrame_fixture[0]\fFrame_offset" IsExpanded="true" />
@@ -55,8 +56,8 @@
   </Option>
   <Option Name="Breakpoints">
     <Breakpoints>
-      <Breakpoint Controller="Controller1" Application="Disk://HRAS_trial/HRAS_trial.pjx" ProgramName="regular_place" Line="22" />
-      <Breakpoint Controller="Controller1" Application="Disk://HRAS_trial/HRAS_trial.pjx" ProgramName="regular_place" Line="23" />
+      <Breakpoint Controller="Controller1" Application="Disk://HRAS_trial/HRAS_trial.pjx" ProgramName="pp_auto_v2" Line="112" />
+      <Breakpoint Controller="Controller1" Application="Disk://HRAS_trial/HRAS_trial.pjx" ProgramName="pp_auto_v2" Line="116" />
     </Breakpoints>
   </Option>
   <Option Name="IOsControlPanel">
@@ -68,7 +69,7 @@
     </Watches>
   </Option>
   <Option Name="3DView">
-    <_3DView Visible="false" />
+    <_3DView Visible="true" />
   </Option>
   <Option Name="SynchronizerMode">
     <Synchronizers>
