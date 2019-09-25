@@ -4,6 +4,7 @@
     <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1">
       <Parameter name="x_tTool" type="tool" xsi:type="element" />
       <Parameter name="x_mMdesc" type="mdesc" xsi:type="element" />
+      <Parameter name="x_mMdesc_slow" type="mdesc" xsi:type="element" />
       <Parameter name="x_pPoint_place" type="point" xsi:type="element" />
       <Parameter name="x_bBool_press" type="bool" xsi:type="element" />
       <Parameter name="x_dDio_cy" type="dio" xsi:type="element" />
@@ -13,14 +14,23 @@
       <Local name="l_pPoint_drop" type="point" xsi:type="array" size="1" />
       <Local name="l_pPoint_safe" type="point" xsi:type="array" size="1" />
       <Local name="l_pPoint_press" type="point" xsi:type="array" size="1" />
+      <Local name="l_pPoint_aprch" type="point" xsi:type="array" size="1" />
     </Locals>
     <Code><![CDATA[begin
   //vertical regular drop process
-
+  
+  //----------------------------
   //control point preparation
+  //----------------------------
   l_pPoint_safe=x_pPoint_place
   l_pPoint_safe.trsf.z=l_pPoint_safe.trsf.z+nNum_safe_h
-
+  //----------------------------
+  //approach point preparation
+  //----------------------------
+  l_pPoint_aprch=x_pPoint_place
+  //----------------------------
+  //place point preparation
+  //----------------------------
   l_pPoint_drop=x_pPoint_place
 
   l_pPoint_press = x_pPoint_place

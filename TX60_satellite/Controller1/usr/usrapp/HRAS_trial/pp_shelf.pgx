@@ -9,19 +9,19 @@
   call show_check("Reload")
 
   //f1 pick and palce
-  call regular_pick(t1,mNomSpeed,f1pick,dDio_t1_cy,false,dDio_f1_secure)
-  call regular_place(t1,mNomSpeed,f1place,false,dDio_t1_cy,false)
+  call regular_pick(t1,mNomSpeed,mSlowSpeed,f1pick,dDio_t1_cy,false,dDio_f1_secure)
+  call regular_place(t1,mNomSpeed,mSlowSpeed,f1place,false,dDio_t1_cy,false)
   
   //f2 pick and place
-  call regular_pick(t1,mNomSpeed,f2pick,dDio_t1_cy,false,dDio_f1_secure)
+  call regular_pick(t1,mNomSpeed,mSlowSpeed,f2pick,dDio_t1_cy,false,dDio_f1_secure)
   //show message and get input (if fixture applied
   call show_check("Fixture close")
 
   call f2_place(mNomSpeed,mSlowSpeed)
   
   //f3 pick and place
-  call regular_pick(t3,mNomSpeed,f3pick,dDio_t3_cy,false,dDio_f3_secure)
-  call regular_place(t3,mNomSpeed,f3place,true,dDio_t3_cy,false)
+  call regular_pick(t3,mNomSpeed,mSlowSpeed,f3pick,dDio_t3_cy,false,dDio_f3_secure)
+  call regular_place(t3,mNomSpeed,mSlowSpeed,f3place,true,dDio_t3_cy,false)
 
 end]]></Code>
   </Program>
