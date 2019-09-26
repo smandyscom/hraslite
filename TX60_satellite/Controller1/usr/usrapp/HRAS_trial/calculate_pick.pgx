@@ -35,8 +35,8 @@
     break
     case 3
       //f3
-      l_nNum_pitchX = 22
-      l_nNum_pitchY = 14
+      l_nNum_pitchX = -14
+      l_nNum_pitchY = 22
       
       l_pPoint_lb = pPointRx_f3_lb
     break

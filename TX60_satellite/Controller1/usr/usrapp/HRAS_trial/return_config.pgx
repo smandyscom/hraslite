@@ -21,8 +21,11 @@
     break
     case 3
       //f3
-      x_nNum_lCol = 2
-      x_nNum_lRow = 5
+      //x_nNum_lCol = 2
+      //x_nNum_lRow = 5
+      
+      x_nNum_lCol = 5
+      x_nNum_lRow = 2
     break
     case 4
       //bottom

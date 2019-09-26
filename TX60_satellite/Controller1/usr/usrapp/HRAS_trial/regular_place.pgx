@@ -47,10 +47,17 @@
     x_dDio_cy = true
     delay(nNum_cy_delay)
   endIf 
+  
+  //---------------------------------
+  // vertical should be linear mode
+  // (Fast approach
+  //---------------------------------
+  movel(l_pPoint_aprch,x_tTool,x_mMdesc)
+  waitEndMove()
   //---------------------------------
   // vertical should be linear mode
   //---------------------------------
-  movel(l_pPoint_drop,x_tTool,x_mMdesc)
+  movel(l_pPoint_drop,x_tTool,x_mMdesc_slow)
   waitEndMove()
   //vg off
   if ioStatus(x_tTool.gripper) >= 0
@@ -73,6 +80,12 @@
     dDio_bk = x_bBool_bk
   endIf 
   
+  //----------
+  //to safe
+  // (Slow up
+  //----------
+  movel(l_pPoint_aprch,x_tTool,x_mMdesc_slow)
+  waitEndMove()
   //---------------------------------
   // vertical should be linear mode
   //---------------------------------

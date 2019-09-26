@@ -67,6 +67,8 @@
   if ioStatus(dDio_bk) >= 0  
     //once dDio_bk is working
     dDio_bk = x_bBool_bk
+    //delay to release
+    delay(nNum_blow_delay) 
   endIf
   
   //----------

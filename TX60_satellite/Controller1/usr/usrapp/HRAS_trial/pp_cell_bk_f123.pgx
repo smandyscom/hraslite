@@ -31,6 +31,7 @@
     //reload  reminder
     call show_check("Recycle pp_cell_bk")
     
+    
     //------------
     //f1 cell pick
     //------------
@@ -96,6 +97,19 @@
     //--------------
     call pp_bs_f1f2f3()
   
+    call show_check("Press then pick")
+    
+    //pick all
+    call regular_pick(t3,mNomSpeed,mSlowSpeed,pPointRx_f3_bk,dDio_t3_cy,false,dDio_f3_secure)
+    
+    call show_check("Press then release")
+    
+    //vg on
+    if ioStatus(t3.gripper) >= 0
+    //once io is working
+      close(t3)
+    endIf
+    
   endWhile
   
   
