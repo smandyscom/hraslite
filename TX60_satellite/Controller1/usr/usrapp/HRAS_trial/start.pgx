@@ -52,9 +52,12 @@
         //F5
         call pp_cells()
       break
+      //----------------------
+      //
+      //----------------------
       case 276
         //F6
-        call pp_cell_bk()
+        call pp_bs_f2f3()
       break
       case 277
         //F7
@@ -63,6 +66,10 @@
       case 278
         //F8
         call pp_auto_v2()
+      break
+      case 113
+        //q
+        call pp_bs_f1f2f3()
       break
       default
         return

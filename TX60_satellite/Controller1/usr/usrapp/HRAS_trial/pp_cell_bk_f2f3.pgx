@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
-  <Program name="pp_cell_bk">
+  <Program name="pp_cell_bk_f2f3">
     <Locals>
       <Local name="l_nNum_f2_lim" type="num" xsi:type="array" size="1" />
       <Local name="l_nNum_f3_lim" type="num" xsi:type="array" size="1" />
@@ -69,7 +69,7 @@
     //--------------
     //pp back secure
     //--------------
-    call pp_back_secure()
+    call pp_bs_f2f3()
     
     //-------------
     // drop 

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
+  <Program name="pp_bs_f1f2f3">
+    <Code><![CDATA[begin
+  //given f1,f2,f3 are in hand
+  //exit state : f1,f2,f3 secured in bs
+  
+  //place f2 in origin of bk (//open bk vacuum
+  call regular_place(t1,mNomSpeed,mSlowSpeed,pPointRx_f1_bk,false,dDio_t1_cy,true)
+  
+  //place f2 in origin of bk (//open bk vacuum
+  call regular_place(t2,mNomSpeed,mSlowSpeed,pPointRx_f2_bk,false,dDio_t2_cy,true)
+  
+  //drop f3 offset from f2 origin
+  call regular_place(t3,mNomSpeed,mSlowSpeed,pPointRx_f3_bk,false,dDio_t3_cy,true)
+   
+end]]></Code>
+  </Program>
+</Programs>

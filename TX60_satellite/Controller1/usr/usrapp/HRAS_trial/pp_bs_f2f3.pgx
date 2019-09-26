@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
-  <Program name="pp_back_secure">
+  <Program name="pp_bs_f2f3">
     <Code><![CDATA[begin
   //given f2,f3 are in hand
   //exit state : f2, f3 secured in one hand

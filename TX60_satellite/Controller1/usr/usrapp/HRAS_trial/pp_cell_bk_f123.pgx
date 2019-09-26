@@ -1,64 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
-  <Program name="pp_auto_v2">
+  <Program name="pp_cell_bk_f123">
     <Locals>
-      <Local name="l_nNum_bt_lim" type="num" xsi:type="array" size="1" />
-      <Local name="l_nNum_bt_idx" type="num" xsi:type="array" size="1" />
-      <Local name="l_nNum_f3_idx" type="num" xsi:type="array" size="1" />
-      <Local name="l_nNum_f2_idx" type="num" xsi:type="array" size="1" />
       <Local name="l_nNum_f1_idx" type="num" xsi:type="array" size="1" />
-      <Local name="l_nNum_f3_lim" type="num" xsi:type="array" size="1" />
-      <Local name="l_nNum_f2_lim" type="num" xsi:type="array" size="1" />
       <Local name="l_nNum_f1_lim" type="num" xsi:type="array" size="1" />
+      <Local name="l_nNum_f2_lim" type="num" xsi:type="array" size="1" />
+      <Local name="l_nNum_f3_lim" type="num" xsi:type="array" size="1" />
+      <Local name="l_nNum_f2_idx" type="num" xsi:type="array" size="1" />
+      <Local name="l_nNum_f3_idx" type="num" xsi:type="array" size="1" />
       <Local name="l_nNum_cRow" type="num" xsi:type="array" size="1" />
       <Local name="l_nNum_cCol" type="num" xsi:type="array" size="1" />
       <Local name="l_pPoint_cur" type="point" xsi:type="array" size="1" />
     </Locals>
     <Code><![CDATA[begin
-  //-----------------------------------------
-  //  Cells to manual fixture
-  //-----------------------------------------
+  //---------------------------------
+  //from cells(f1,f2,f3) to back secure
+  //---------------------------------
   
   //initialize
   call calculate_total(1,l_nNum_f1_lim)
   call calculate_total(2,l_nNum_f2_lim)
   call calculate_total(3,l_nNum_f3_lim)
-  call calculate_total(4,l_nNum_bt_lim)
   
   l_nNum_f1_idx = 0
   l_nNum_f2_idx = 0
   l_nNum_f3_idx = 0
-  l_nNum_bt_idx = 0
   
   while true
     
-    call show_check("Unload ASSY. filter")
-    
-    //------------
-    //bottom cell pick
-    //------------
-    //runout remider
-    if l_nNum_bt_idx >= l_nNum_bt_lim
-      //warning if runs out
-      call show_check("Reload Bottom")
-      //reset
-      l_nNum_bt_idx = 0
-    endIf
-    
-    
-    call calculate_rc(l_nNum_bt_idx,4,l_nNum_cRow,l_nNum_cCol)
-    call calculate_pick(l_nNum_cRow,l_nNum_cCol,l_pPoint_cur,4)
-    call regular_pick(t3,mNomSpeed,mSlowSpeed,l_pPoint_cur,dDio_t3_cy,false,dDio_f3_secure)  
-    
-    //show progress
-    call show_progress(sScreen_ppShelf,l_nNum_bt_idx+1,l_nNum_bt_lim,5)
-    //increase
-    l_nNum_bt_idx = l_nNum_bt_idx +1
-
-    //------------
-    //bottom place
-    //------------
-    call regular_place(t3,mNomSpeed,mSlowSpeed,pPointRx_bt_pos,false,dDio_t3_cy,false)
+    //reload  reminder
+    call show_check("Recycle pp_cell_bk")
     
     //------------
     //f1 cell pick
@@ -92,8 +63,7 @@
       //reset
       l_nNum_f2_idx = 0
     endIf
-    
-    
+        
     call calculate_rc(l_nNum_f2_idx,2,l_nNum_cRow,l_nNum_cCol)
     call calculate_pick(l_nNum_cRow,l_nNum_cCol,l_pPoint_cur,2)
     call regular_pick(t2,mNomSpeed,mSlowSpeed,l_pPoint_cur,dDio_t2_cy,false,dDio_f2_secure)
@@ -116,30 +86,19 @@
     call calculate_rc(l_nNum_f3_idx,3,l_nNum_cRow,l_nNum_cCol)
     call calculate_pick(l_nNum_cRow,l_nNum_cCol,l_pPoint_cur,3)
     call regular_pick(t3,mNomSpeed,mSlowSpeed,l_pPoint_cur,dDio_t3_cy,false,dDio_f3_secure)
-        
     //show progress
     call show_progress(sScreen_ppShelf,l_nNum_f3_idx+1,l_nNum_f3_lim,8)
     //increase
     l_nNum_f3_idx = l_nNum_f3_idx +1
-    
-    //-------------
-    // Back secure (F1,F2,F3 
-    //-------------
+
+    //--------------
+    //pp back secure
+    //--------------
     call pp_bs_f1f2f3()
-    //-------------
-    // F1,F2,F3 pick at once
-    //-------------
-    call regular_pick(t3,mNomSpeed,mSlowSpeed,pPointRx_f3_bk,dDio_t3_cy,false,dDio_f3_secure)   
-    //----------------
-    // F1+F2+F3 place at once
-    //----------------
-    //f3place
-    call regular_place(t3,mNomSpeed,mSlowSpeed,pPointRx_f3_pos,false,dDio_t3_cy,false)
-    
+  
   endWhile
   
   
-end
-]]></Code>
+end]]></Code>
   </Program>
 </Programs>

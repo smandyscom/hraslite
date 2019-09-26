@@ -25,12 +25,13 @@
   //  HRAS Lite
   //---------------
   gotoxy(x_sScreen,0,5)
-  putln(x_sScreen,"F6)Cell to back secure")
+  putln(x_sScreen,"F6)Cell to back secure f2f3")
   gotoxy(x_sScreen,0,6)
   putln(x_sScreen,"F7)Auto ver1")
   gotoxy(x_sScreen,0,7)
   putln(x_sScreen,"F8)Auto ver2")
-  
+  gotoxy(x_sScreen,0,8)
+  putln(x_sScreen,"q)Cell to back secure f1f2f3")
   
   //anykey
   x_nNum_choosed = get(x_sScreen)

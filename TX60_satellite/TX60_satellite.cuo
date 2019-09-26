@@ -36,9 +36,6 @@
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\f3\f3[0]" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\f3\f3[0]\pPointRx_f3_lb" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\back_secure" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\back_secure\back_secure[0]" IsExpanded="true" />
@@ -52,13 +49,21 @@
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\fFrame_fixture\fFrame_fixture[0]\fFrame_offset\fFrame_offset[0]\pPointRx_bt_pos" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\fFrame_fixture\fFrame_fixture[0]\fFrame_offset\fFrame_offset[0]\pPointRx_f1_pos" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\fFrame_fixture\fFrame_fixture[0]\fFrame_offset\fFrame_offset[0]\pPointRx_f3_pos" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_1" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_1\fFrame_plate_1[0]" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_1\fFrame_plate_1[0]\f1" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_1\fFrame_plate_1[0]\f1\f1[0]" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_1\fFrame_plate_1[0]\f1\f1[0]\pPointRx_f1_lb" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_1\fFrame_plate_1[0]\f2" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_1\fFrame_plate_1[0]\f2\f2[0]" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_1\fFrame_plate_1[0]\f2\f2[0]\pPointRx_f2_lb" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_1\fFrame_plate_1[0]\f3" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_1\fFrame_plate_1[0]\f3\f3[0]" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_1\fFrame_plate_1[0]\f3\f3[0]\pPointRx_f3_lb" IsExpanded="true" />
     </Nodes>
   </Option>
   <Option Name="Breakpoints">
-    <Breakpoints>
-      <Breakpoint Controller="Controller1" Application="Disk://HRAS_trial/HRAS_trial.pjx" ProgramName="pp_auto_v2" Line="112" />
-      <Breakpoint Controller="Controller1" Application="Disk://HRAS_trial/HRAS_trial.pjx" ProgramName="pp_auto_v2" Line="116" />
-    </Breakpoints>
+    <Breakpoints />
   </Option>
   <Option Name="IOsControlPanel">
     <Ios />
@@ -69,7 +74,7 @@
     </Watches>
   </Option>
   <Option Name="3DView">
-    <_3DView Visible="true" />
+    <_3DView Visible="false" />
   </Option>
   <Option Name="SynchronizerMode">
     <Synchronizers>

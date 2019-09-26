@@ -9,9 +9,11 @@
     <Program file="f2_place.pgx" />
     <Program file="pick_cells.pgx" />
     <Program file="pp_auto_v1.pgx" />
-	<Program file="pp_auto_v2.pgx" />
-    <Program file="pp_back_secure.pgx" />
-    <Program file="pp_cell_bk.pgx" />
+    <Program file="pp_auto_v2.pgx" />
+    <Program file="pp_bs_f1f2f3.pgx" />
+    <Program file="pp_bs_f2f3.pgx" />
+    <Program file="pp_cell_bk_f123.pgx" />
+    <Program file="pp_cell_bk_f2f3.pgx" />
     <Program file="pp_cells.pgx" />
     <Program file="pp_shelf.pgx" />
     <Program file="regular_pick.pgx" />
