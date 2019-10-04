@@ -16,11 +16,7 @@
 				<UIElement xsi:type="SplitContainer" AutoHideSize="1198,395" DockedSize="750.8951385007,295.37991254879" DocumentSize="1403,705" FloatingSize="1198,395" Size="750.8951385007,295.37991254879" Orientation="Horizontal">
 					<UIElement xsi:type="SplitContainer" AutoHideSize="1198,395" DockedSize="750.8951385007,295.37991254879" DocumentSize="1087,705" FloatingSize="1198,395" Size="750.8951385007,295.37991254879" Orientation="Vertical">
 						<UIElement xsi:type="Workspace" AutoHideSize="1198,395" DockedSize="1198,395" DocumentSize="750.8951385007,295.37991254879" FloatingSize="1198,395" Size="750.8951385007,295.37991254879">
-							<Content xsi:type="TabbedMdiHost">
-								<Content xsi:type="SplitContainer" AutoHideSize="750.8951385007,295.37991254879" DockedSize="750.8951385007,295.37991254879" DocumentSize="750.8951385007,295.37991254879" FloatingSize="750.8951385007,295.37991254879" Size="750.8951385007,295.37991254879" Orientation="Horizontal">
-									<UIElement xsi:type="TabbedMdiContainer" AutoHideSize="750.8951385007,295.37991254879" DockedSize="750.8951385007,295.37991254879" DocumentSize="750.8951385007,295.37991254879" FloatingSize="750.8951385007,295.37991254879" Size="750.8951385007,295.37991254879" SelectedWindowUniqueId="5f6c1814-eda4-482b-8207-4e2a7b103a9e" />
-								</Content>
-							</Content>
+							<Content xsi:type="TabbedMdiHost" />
 						</UIElement>
 						<UIElement xsi:type="ToolWindowContainer" AutoHideSize="200,200" DockedSize="750.8951385007,258" DocumentSize="200,200" FloatingSize="200,200" Size="750.8951385007,258">
 							<UIElement xsi:type="Track" UniqueId="9cdb7a09-d8f8-46d1-afd7-6f1dece1fbc8" />
