@@ -37,8 +37,6 @@
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_1" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_1\fFrame_plate_1[0]" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_1\fFrame_plate_1[0]\f1" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_1\fFrame_plate_1[0]\f1\f1[0]" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_1\fFrame_plate_1[0]\f1\f1[0]\pPointRx_f1_lb" IsExpanded="true" />
@@ -48,15 +46,19 @@
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_1\fFrame_plate_1[0]\f3" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_1\fFrame_plate_1[0]\f3\f3[0]" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_1\fFrame_plate_1[0]\f3\f3[0]\pPointRx_f3_lb" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\back_secure" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\back_secure\back_secure[0]" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\back_secure\back_secure[0]\frame_bk" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\back_secure\back_secure[0]\frame_bk\frame_bk[0]" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\back_secure\back_secure[0]\frame_bk\frame_bk[0]\pPointRx_f1_bk" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\fFrame_fixture" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\fFrame_fixture\fFrame_fixture[0]" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\fFrame_fixture\fFrame_fixture[0]\fFrame_offset" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\fFrame_bt" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\fFrame_bt\fFrame_bt[0]" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\fFrame_bt\fFrame_bt[0]\fFrame_local" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\fFrame_bt\fFrame_bt[0]\fFrame_local\fFrame_local[0]" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\fFrame_bt\fFrame_bt[0]\fFrame_local\fFrame_local[0]\pPointRx_bt_lb" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\fFrame_bt\fFrame_bt[0]\fFrame_ready" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\fFrame_bt\fFrame_bt[0]\fFrame_ready\fFrame_ready[0]" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\fFrame_fixture\fFrame_fixture[0]\fFrame_offset\fFrame_offset[0]" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\fFrame_fixture\fFrame_fixture[0]\fFrame_offset\fFrame_offset[0]\pPointRx_bt_pos" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_2\fFrame_plate_2[0]\fFrame_fixture\fFrame_fixture[0]\fFrame_offset\fFrame_offset[0]\pPointRx_f1_pos" IsExpanded="true" />

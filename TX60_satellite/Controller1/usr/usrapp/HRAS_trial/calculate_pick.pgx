@@ -44,7 +44,7 @@
       //bottom 
       l_nNum_pitchX = 32
       l_nNum_pitchY = 33
-      
+     
       l_pPoint_lb = pPointRx_bt_lb
     break
     
@@ -55,6 +55,18 @@
   
   x_pPoint_return.trsf.x = x_pPoint_return.trsf.x + x_nNum_col * l_nNum_pitchX
   x_pPoint_return.trsf.y = x_pPoint_return.trsf.y + x_nNum_row * l_nNum_pitchY
+  
+  //---------------------------------------------
+  // Bottom part special case - base frame offset
+  //---------------------------------------------
+  switch x_nNum_choose
+    case 4
+      fFrame_ofs.trsf.x = x_nNum_col * l_nNum_pitchX
+      fFrame_ofs.trsf.y = x_nNum_row * l_nNum_pitchY
+      //maintain the lb point
+      x_pPoint_return = pPointRx_bt_lb
+    break
+  endSwitch
   
 end
 

@@ -48,7 +48,8 @@
     
     call calculate_rc(l_nNum_bt_idx,4,l_nNum_cRow,l_nNum_cCol)
     call calculate_pick(l_nNum_cRow,l_nNum_cCol,l_pPoint_cur,4)
-    call regular_pick(t3,mNomSpeed,mSlowSpeed,l_pPoint_cur,dDio_t3_cy,false,dDio_f3_secure)  
+    call regular_pick(t3,mNomSpeed,mSlowSpeed,l_pPoint_cur,dDio_t3_cy,false,dDio_f3_secure)
+    
     
     //show progress
     call show_progress(sScreen_ppShelf,l_nNum_bt_idx+1,l_nNum_bt_lim,5)
