@@ -17,6 +17,7 @@
       <Node Path="TX60_satellite\Controller1\HRAS_trial" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\pick_cells\Locals" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\pp_auto_v1\Locals" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\pp_auto_v2" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\pp_cell_bk_f123\Locals" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\pp_cell_bk_f2f3\Locals" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\pp_cells\Locals" IsExpanded="true" />
@@ -34,7 +35,6 @@
       <Node Path="TX60_satellite\Controller1" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_1\fFrame_plate_1[0]\f1" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\world[0]\fFrame_reverse\fFrame_reverse[0]\fFrame_plate_1\fFrame_plate_1[0]\f1\f1[0]" IsExpanded="true" />
