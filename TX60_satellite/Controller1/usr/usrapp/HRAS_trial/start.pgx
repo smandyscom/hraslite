@@ -65,11 +65,15 @@
       break
       case 278
         //F8
-        call pp_auto_v2()
+        call pp_auto_v2(false)
       break
       case 113
         //q
         call pp_cell_bk_f123()
+      break
+      case 119
+        //w , single mode
+        call pp_auto_v2(true)
       break
       default
         return

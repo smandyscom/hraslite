@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Programs xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.staubli.com/robotics/VAL3/Program/2">
   <Program name="pp_auto_v2">
+    <Parameters xmlns="http://www.staubli.com/robotics/VAL3/Param/1">
+      <Parameter name="x_bBool_single" type="bool" xsi:type="element" />
+    </Parameters>
     <Locals>
       <Local name="l_nNum_bt_lim" type="num" xsi:type="array" size="1" />
       <Local name="l_nNum_bt_idx" type="num" xsi:type="array" size="1" />
@@ -34,6 +37,11 @@
     
     call show_check("Unload ASSY. filter")
     
+    if x_bBool_single == true
+      //prompt reminder
+      l_nNum_bt_idx = l_nNum_bt_lim
+    endIf
+    
     //------------
     //bottom cell pick
     //------------
@@ -44,8 +52,7 @@
       //reset
       l_nNum_bt_idx = 0
     endIf
-    
-    
+          
     call calculate_rc(l_nNum_bt_idx,4,l_nNum_cRow,l_nNum_cCol)
     call calculate_pick(l_nNum_cRow,l_nNum_cCol,l_pPoint_cur,4)
     call regular_pick(t3,mNomSpeed,mSlowSpeed,l_pPoint_cur,dDio_t3_cy,false,dDio_f3_secure)

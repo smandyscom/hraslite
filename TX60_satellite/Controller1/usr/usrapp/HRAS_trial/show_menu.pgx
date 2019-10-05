@@ -29,9 +29,11 @@
   gotoxy(x_sScreen,0,6)
   putln(x_sScreen,"F7)Auto ver1")
   gotoxy(x_sScreen,0,7)
-  putln(x_sScreen,"F8)Auto ver2")
+  putln(x_sScreen,"F8)Auto ver2 (multi")
   gotoxy(x_sScreen,0,8)
   putln(x_sScreen,"q)Cell to back secure f1f2f3")
+  gotoxy(x_sScreen,0,9)
+  putln(x_sScreen,"w)CAuto ver2 (single")
   
   //anykey
   x_nNum_choosed = get(x_sScreen)
