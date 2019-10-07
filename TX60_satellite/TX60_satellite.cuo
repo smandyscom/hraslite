@@ -8,6 +8,7 @@
       <Node Path="TX60_satellite" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\dio" IsExpanded="true" />
     </Nodes>
   </Option>
   <Option Name="CellExplorer">
@@ -17,10 +18,10 @@
       <Node Path="TX60_satellite\Controller1\HRAS_trial" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\pick_cells\Locals" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\pp_auto_v1\Locals" IsExpanded="true" />
-      <Node Path="TX60_satellite\Controller1\HRAS_trial\pp_auto_v2" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\pp_cell_bk_f123\Locals" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\pp_cell_bk_f2f3\Locals" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\pp_cells\Locals" IsExpanded="true" />
+      <Node Path="TX60_satellite\Controller1\HRAS_trial\regular_pick" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\regular_pick\Parameters" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\regular_pick\Locals" IsExpanded="true" />
       <Node Path="TX60_satellite\Controller1\HRAS_trial\regular_place\Parameters" IsExpanded="true" />
